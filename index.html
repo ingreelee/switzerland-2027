@@ -288,6 +288,104 @@
             .transport-leg { grid-template-columns: 1fr; gap: 0.3rem; }
             .transport-arrow { text-align: left; }
          }
+
+         /* Accommodation overview */
+
+         .stay-overview-grid {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 1rem;
+         }
+
+         @media (min-width: 768px) {
+            .stay-overview-grid {
+               grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+         }
+
+         .stay-overview-card {
+            padding: 1rem 1.1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            background: #fff;
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+         }
+
+         .stay-overview-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+         }
+
+         .stay-overview-city {
+            font-size: 0.72rem;
+            font-weight: 900;
+            letter-spacing: 0.06em;
+            color: #047857;
+         }
+
+         .stay-overview-nights {
+            padding: 0.2rem 0.5rem;
+            border-radius: 999px;
+            background: #ecfdf5;
+            border: 1px solid #a7f3d0;
+            color: #065f46;
+            font-size: 0.65rem;
+            font-weight: 800;
+            white-space: nowrap;
+         }
+
+         .stay-overview-name {
+            margin-bottom: 0.2rem;
+            font-size: 0.9rem;
+            font-weight: 900;
+            color: #0f172a;
+         }
+
+         .stay-overview-date {
+            margin-bottom: 0.8rem;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #64748b;
+         }
+
+         .stay-overview-info {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.65rem 1rem;
+         }
+
+         .stay-overview-item {
+            font-size: 0.7rem;
+            line-height: 1.5;
+            color: #64748b;
+         }
+
+         .stay-overview-item strong {
+            display: block;
+            margin-bottom: 0.1rem;
+            font-size: 0.68rem;
+            font-weight: 800;
+            color: #334155;
+         }
+
+         .stay-overview-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.55rem;
+            margin-top: 0.85rem;
+            padding-top: 0.75rem;
+            border-top: 1px dashed #e2e8f0;
+         }
+
+         @media (max-width: 520px) {
+            .stay-overview-info {
+               grid-template-columns: 1fr;
+            }
+         }
+
       </style>
    </head>
    <body class="min-h-screen flex flex-col antialiased selection:bg-[#2f5d50] selection:text-white">
@@ -339,34 +437,34 @@
                <span aria-hidden="true" class="major-chevron">▼</span>
             </summary>
             <div class="major-content">
-               <!-- Route Overview Pills -->
+               <!-- Route Overview -->
                <div class="flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm">
                   <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold border border-blue-200">
-                     慕尼黑 · 2晚
+                     慕尼黑 · 1 晚
                   </span>
                   <span class="text-gray-400 font-bold">→</span>
                   <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#f8fafc] text-[#475569] font-bold border border-[#cbd5e1]">
-                     蘇黎世(停留)
+                     蘇黎世 · 1 晚
                   </span>
                   <span class="text-gray-400 font-bold">→</span>
                   <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold border border-blue-200">
-                     琉森 · 2晚
+                     琉森 · 2 晚
                   </span>
                   <span class="text-gray-400 font-bold">→</span>
                   <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#f8fafc] text-[#475569] font-bold border border-[#cbd5e1]">
-                     因特拉肯(停留)
+                     因特拉肯（停留）
                   </span>
                   <span class="text-gray-400 font-bold">→</span>
                   <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold border border-blue-200">
-                     格林德瓦 · 4晚
+                     格林德瓦 · 4 晚
                   </span>
                   <span class="text-gray-400 font-bold">→</span>
                   <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold border border-blue-200">
-                     策馬特 · 1晚
+                     策馬特 · 1 晚
                   </span>
                   <span class="text-gray-400 font-bold">→</span>
                   <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold border border-blue-200">
-                     聖莫里茲 · 1晚
+                     聖莫里茲 · 1 晚
                   </span>
                </div>
 
@@ -375,6 +473,176 @@
                   <img src="images/route-map.png" alt="瑞士與慕尼黑啤酒節 11 日行程地圖"
                      class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm" loading="lazy"/>
                </figure>
+            </div>
+         </details>
+         <details class="major-section scroll-mt-24" id="accommodation">
+            <summary class="major-summary">
+               <span class="major-summary-title"><span>🏨</span>住宿總覽</span>
+               <span aria-hidden="true" class="major-chevron">▼</span>
+            </summary>
+            <div class="major-content">
+               <!-- Accommodation Overview -->
+               <div class="stay-overview-grid">
+
+                  <!-- Munich -->
+                  <article class="stay-overview-card">
+                     <div class="stay-overview-top">
+                        <span class="stay-overview-city">🇩🇪 MUNICH</span>
+                        <span class="stay-overview-nights">1 晚</span>
+                     </div>
+                     <div class="stay-overview-name">Hotel Obermaier</div>
+                     <div class="stay-overview-date">9/23 → 9/24</div>
+                     <div class="stay-overview-info">
+                        <div class="stay-overview-item"><strong>📅 Check-in</strong>15:00～23:30</div>
+                        <div class="stay-overview-item"><strong>📅 Check-out</strong>11:00 前</div>
+                        <div class="stay-overview-item"><strong>🛏️ 房型</strong>Junior Suite with Gallery<br/>一張雙人床、兩張單人床、一張沙發床</div>
+                        <div class="stay-overview-item"><strong>📝 備註</strong>8/23 前可免費取消，含早餐</div>
+                     </div>
+                     <div class="stay-overview-links">
+                        <a class="day-link ticket-link"
+                           href="https://www.booking.com/Share-mqzcePT"
+                           rel="noopener noreferrer" target="_blank"
+                           >🏨 Booking</a>
+                        <a class="day-link map-link"
+                           href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Obermaier+Munich"
+                           rel="noopener noreferrer" target="_blank"
+                           >📍 Google Maps</a>
+                     </div>
+                  </article>
+
+                  <!-- Zurich -->
+                  <article class="stay-overview-card">
+                     <div class="stay-overview-top">
+                        <span class="stay-overview-city">🇨🇭 ZÜRICH</span>
+                        <span class="stay-overview-nights">1 晚</span>
+                     </div>
+                     <div class="stay-overview-name">住宿待確認</div>
+                     <div class="stay-overview-date">9/24 → 9/25</div>
+                     <div class="stay-overview-info">
+                        <div class="stay-overview-item"><strong>📅 Check-in</strong>待確認</div>
+                        <div class="stay-overview-item"><strong>📅 Check-out</strong>待確認</div>
+                        <div class="stay-overview-item"><strong>🛏️ 房型</strong>待確認</div>
+                        <div class="stay-overview-item"><strong>📝 備註</strong>晚間由慕尼黑飛抵蘇黎世</div>
+                     </div>
+                     <div class="stay-overview-links">
+                        <a class="day-link ticket-link"
+                           href="https://www.booking.com/Share-mqzcePT"
+                           rel="noopener noreferrer" target="_blank"
+                           >🏨 Booking</a>
+                        <a class="day-link map-link"
+                           href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Obermaier+Munich"
+                           rel="noopener noreferrer" target="_blank"
+                           >📍 Google Maps</a>
+                     </div>
+                  </article>
+
+                  <!-- Lucerne -->
+                  <article class="stay-overview-card">
+                     <div class="stay-overview-top">
+                        <span class="stay-overview-city">🇨🇭 LUCERNE</span>
+                        <span class="stay-overview-nights">2 晚</span>
+                     </div>
+                     <div class="stay-overview-name">住宿待確認</div>
+                     <div class="stay-overview-date">9/25 → 9/27</div>
+                     <div class="stay-overview-info">
+                        <div class="stay-overview-item"><strong>📅 Check-in</strong>待確認</div>
+                        <div class="stay-overview-item"><strong>📅 Check-out</strong>待確認</div>
+                        <div class="stay-overview-item"><strong>🛏️ 房型</strong>待確認</div>
+                        <div class="stay-overview-item"><strong>📝 備註</strong>住 2 晚</div>
+                     </div>
+                     <div class="stay-overview-links">
+                        <a class="day-link ticket-link"
+                           href="https://www.booking.com/Share-mqzcePT"
+                           rel="noopener noreferrer" target="_blank"
+                           >🏨 Booking</a>
+                        <a class="day-link map-link"
+                           href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Obermaier+Munich"
+                           rel="noopener noreferrer" target="_blank"
+                           >📍 Google Maps</a>
+                     </div>
+                  </article>
+
+                  <!-- Grindelwald -->
+                  <article class="stay-overview-card">
+                     <div class="stay-overview-top">
+                        <span class="stay-overview-city">🇨🇭 GRINDELWALD</span>
+                        <span class="stay-overview-nights">4 晚</span>
+                     </div>
+                     <div class="stay-overview-name">住宿待確認</div>
+                     <div class="stay-overview-date">9/27 → 10/01</div>
+                     <div class="stay-overview-info">
+                        <div class="stay-overview-item"><strong>📅 Check-in</strong>待確認</div>
+                        <div class="stay-overview-item"><strong>📅 Check-out</strong>待確認</div>
+                        <div class="stay-overview-item"><strong>🛏️ 房型</strong>待確認</div>
+                        <div class="stay-overview-item"><strong>📝 備註</strong>住 4 晚｜山區行程基地</div>
+                     </div>
+                     <div class="stay-overview-links">
+                        <a class="day-link ticket-link"
+                           href="https://www.booking.com/Share-mqzcePT"
+                           rel="noopener noreferrer" target="_blank"
+                           >🏨 Booking</a>
+                        <a class="day-link map-link"
+                           href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Obermaier+Munich"
+                           rel="noopener noreferrer" target="_blank"
+                           >📍 Google Maps</a>
+                     </div>
+                  </article>
+
+                  <!-- Zermatt -->
+                  <article class="stay-overview-card">
+                     <div class="stay-overview-top">
+                        <span class="stay-overview-city">🇨🇭 ZERMATT</span>
+                        <span class="stay-overview-nights">1 晚</span>
+                     </div>
+                     <div class="stay-overview-name">住宿待確認</div>
+                     <div class="stay-overview-date">10/01 → 10/02</div>
+                     <div class="stay-overview-info">
+                        <div class="stay-overview-item"><strong>📅 Check-in</strong>待確認</div>
+                        <div class="stay-overview-item"><strong>📅 Check-out</strong>待確認</div>
+                        <div class="stay-overview-item"><strong>🛏️ 房型</strong>待確認</div>
+                        <div class="stay-overview-item"><strong>📝 備註</strong>xxx</div>
+                     </div>
+                     <div class="stay-overview-links">
+                        <a class="day-link ticket-link"
+                           href="https://www.booking.com/Share-mqzcePT"
+                           rel="noopener noreferrer" target="_blank"
+                           >🏨 Booking</a>
+                        <a class="day-link map-link"
+                           href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Obermaier+Munich"
+                           rel="noopener noreferrer" target="_blank"
+                           >📍 Google Maps</a>
+                     </div>
+                  </article>
+
+                  <!-- St. Moritz -->
+                  <article class="stay-overview-card">
+                     <div class="stay-overview-top">
+                        <span class="stay-overview-city">🇨🇭 ST. MORITZ</span>
+                        <span class="stay-overview-nights">1 晚</span>
+                     </div>
+                     <div class="stay-overview-name">住宿待確認</div>
+                     <div class="stay-overview-date">10/02 → 10/03</div>
+                     <div class="stay-overview-info">
+                        <div class="stay-overview-item">
+                           <strong>📅 Check-in</strong>
+                           待確認
+                        </div>
+                        <div class="stay-overview-item">
+                           <strong>📅 Check-out</strong>
+                           待確認
+                        </div>
+                        <div class="stay-overview-item">
+                           <strong>🛏️ 房型</strong>
+                           待確認
+                        </div>
+                        <div class="stay-overview-item">
+                           <strong>📝 備註</strong>
+                           Glacier Express 抵達日
+                        </div>
+                     </div>
+                  </article>
+
+               </div>
             </div>
          </details>
          <details class="major-section scroll-mt-24" id="itinerary" open="">
@@ -419,57 +687,37 @@
                            <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
                         </summary>
                         <div class="day-content">
-                            <div class="transport-card">
-                               <div class="transport-title">🚆️今日交通</div>
-                               <div class="transport-list">
-                                  <div class="transport-leg">
-                                     <div><div class="transport-place">Amsterdam (AMS)</div><div class="transport-sub">出發時間待訂票後填入</div></div>
-                                     <div class="transport-arrow">→</div>
-                                     <div><div class="transport-place">Munich (MUC)</div><div class="transport-sub">航班／抵達時間待確認</div></div>
-                                  </div>
-                               </div>
-                               <div class="transport-note">🎟️ 航班尚未確定｜訂票後補上航空公司、航班號、航廈與行李資訊。</div>
-                            </div>
+                           <div class="transport-card">
+                              <div class="transport-title">🚆️今日交通</div>
+                              <div class="transport-sub mb-2">Lufthansa LH2311</div>
+                              <div class="transport-list">
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Amsterdam (AMS)</div><div class="transport-sub">08:15</div></div>
+                                    <div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Munich (MUC)</div><div class="transport-sub">09:40</div></div>
+                                 </div>
+                              </div>
+                              <div class="transport-note">🎟️ 航班尚未確定｜訂票後補上航空公司、航班號、航廈與行李資訊。</div>
+                           </div>
                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">☀️️ 下午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    舊城區經典漫步：瑪利亞廣場 (Marienplatz) → 穀物市場 (Viktualienmarkt) → 卡爾廣場。
+                                    到飯店寄放行李後，前往 Theresienwiese 特蕾西婭草坪體驗德國啤酒節。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌙 晚上</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    前往 Theresienwiese 特蕾西婭草坪，體驗德國啤酒節首晚歡樂帳篷氣氛。
+                                    德國啤酒節 或 回住宿休息。
                                  </p>
                               </div>
                            </div>
-                           <!-- Collapsible Plan B -->
                            <div class="day-links">
                               <div class="day-links-title">
                                  📍 Google Maps｜相關連結
                               </div>
                               <div class="day-links-grid">
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Munich+Germany"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🏨 住宿｜Munich</a>
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Marienplatz+Munich"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >📍 Marienplatz</a>
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Viktualienmarkt+Munich"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🥨 Viktualienmarkt</a>
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Theresienwiese+Munich"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🍺 Oktoberfest｜Theresienwiese</a>
-                                 <a class="day-link ticket-link"
-                                    href="https://www.oktoberfest.de/en/tents/reservations-oktoberfest/booking-oktoberfest-book-table-oktoberfest"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🎟️ Oktoberfest 官方預約</a>
                                  <a class="day-link guide-jump"
                                     href="#guide-oktoberfest"
                                     >ℹ️ 景點指南｜Oktoberfest</a>
@@ -481,7 +729,7 @@
                                  <span>備案 Plan B</span>
                               </summary>
                               <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
-                                 若長途班機延誤，取消舊城區徒步行程，直接前往飯店寄放行李後直奔啤酒節會場。
+                                 若中午後才會抵達啤酒節會場，改去舊城區及酒吧。
                               </div>
                            </details>
                         </div>
@@ -496,30 +744,42 @@
                               <div class="flex items-center gap-3">
                                  <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 02</span>
                                  <span class="text-xs font-bold text-slate-500">9/24 (五)</span>
-                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：慕尼黑</span>
+                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：蘇黎世</span>
                               </div>
-                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">慕尼黑舊城巡禮 + 二次啤酒節</h3>
+                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">慕尼黑舊城 + 啤酒節 → 蘇黎世</h3>
                            </div>
                            <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
                         </summary>
                         <div class="day-content">
+                           <div class="transport-card">
+                              <div class="transport-title">🚆️今日交通</div>
+                              <div class="transport-sub mb-2">Lufthansa LH2374</div>
+                              <div class="transport-list">
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Munich (MUC)</div><div class="transport-sub">20:50</div></div>
+                                    <div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Zurich (ZRH)</div><div class="transport-sub">21:45</div></div>
+                                 </div>
+                              </div>
+                              <div class="transport-note">🎟️ 航班尚未確定｜訂票後補上航空公司、航班號、航廈與行李資訊。</div>
+                           </div>
                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌅 上午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    走訪慕尼黑王宮 (Residenz) 或聖母教堂 (Frauenkirche)，體驗巴伐利亞皇室歷史文化。
+                                    飯店早餐後退房並寄放行李，二次前往啤酒節會場，走訪不同主題啤酒帳篷。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">☀️ 下午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    享用德式豬腳午餐，趁週五晚間尖峰人潮湧入前，提早進入啤酒節園區。
+                                    享用德式午餐，前往慕尼黑舊城區。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌙 晚上</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    二次進入啤酒節會場，挑戰開箱不同主題特色啤酒帳篷 (Beer Tents)。
+                                    回飯店領取行李後前往慕尼黑機場，搭機前往瑞士蘇黎世。
                                  </p>
                               </div>
                            </div>
@@ -528,26 +788,9 @@
                                  📍 Google Maps｜相關連結
                               </div>
                               <div class="day-links-grid">
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Munich+Germany"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🏨 住宿區域｜Munich</a>
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Munich+Residenz"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🏛 Munich Residenz</a>
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Frauenkirche+Munich"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >⛪ Frauenkirche</a>
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Theresienwiese+Munich"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🍺 Oktoberfest｜Theresienwiese</a>
-                                 <a class="day-link ticket-link"
-                                    href="https://www.oktoberfest.de/en/beer-tents"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🍺 官方 Beer Tents</a>
+                                 <a class="day-link guide-jump"
+                                    href="#guide-munich"
+                                    >ℹ️ 景點指南｜Munich</a>
                               </div>
                            </div>
                            <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
@@ -556,7 +799,7 @@
                                  <span>備案 Plan B</span>
                               </summary>
                               <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
-                                 如遇大雨，戶外景點改為 BMW 博物館或老繪畫陳列館，並搭配室內皇家啤酒屋 (Hofbräuhaus) 替代。
+                                 如遇大雨或 D1 已去啤酒節，可改去 BMW 博物館、舊城區景點或皇家啤酒屋 (Hofbräuhaus) 。
                               </div>
                            </details>
                         </div>
@@ -573,7 +816,7 @@
                                  <span class="text-xs font-bold text-slate-500">9/25 (六)</span>
                                  <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：琉森</span>
                               </div>
-                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">德國 → 蘇黎世 → 琉森</h3>
+                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">蘇黎世 → 琉森</h3>
                            </div>
                            <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
                         </summary>
@@ -630,14 +873,6 @@
                                     href="https://www.google.com/maps/search/?api=1&amp;query=Zurich+Old+Town"
                                     rel="noopener noreferrer" target="_blank"
                                     >🏘 Zürich Altstadt</a>
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Lucerne+Switzerland"
-                                    rel="noopener noreferrer"  target="_blank"
-                                    >🏨 住宿區域｜Lucerne</a>
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/dir/?api=1&amp;origin=Munich+Germany&amp;destination=Lucerne+Switzerland&amp;waypoints=Zurich+HB"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🧭 Munich → Zürich → Lucerne</a>
                                  <a class="day-link ticket-link"
                                     href="https://www.sbb.ch/en"
                                     rel="noopener noreferrer" target="_blank"
@@ -711,10 +946,6 @@
                                  📍 Google Maps｜相關連結
                               </div>
                               <div class="day-links-grid">
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Lucerne+Switzerland"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🏨 住宿區域｜Lucerne</a>
                                  <a class="day-link map-link"
                                     href="https://www.google.com/maps/search/?api=1&amp;query=Chapel+Bridge+Lucerne"
                                     rel="noopener noreferrer" target="_blank"
@@ -812,10 +1043,6 @@
                               </div>
                               <div class="day-links-grid">
                                  <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Grindelwald+Switzerland"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🏨 住宿區域｜Grindelwald</a>
-                                 <a class="day-link map-link"
                                     href="https://www.google.com/maps/search/?api=1&amp;query=Interlaken+Ost"
                                     rel="noopener noreferrer" target="_blank"
                                     >🚉 Interlaken Ost</a>
@@ -823,10 +1050,6 @@
                                     href="https://www.google.com/maps/search/?api=1&amp;query=Hohematte+Park+Interlaken"
                                     rel="noopener noreferrer" target="_blank"
                                     >🌿 Höhematte</a>
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/dir/?api=1&amp;origin=Lucerne+Switzerland&amp;destination=Grindelwald+Switzerland&amp;waypoints=Interlaken+Ost"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🧭 Lucerne → Interlaken → Grindelwald</a>
                                  <a class="day-link ticket-link"
                                     href="https://www.sbb.ch/en"
                                     rel="noopener noreferrer" target="_blank"
@@ -888,10 +1111,6 @@
                                  📍 Google Maps｜相關連結
                               </div>
                               <div class="day-links-grid">
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Grindelwald+Switzerland"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🏨 住宿區域｜Grindelwald</a>
                                  <a class="day-link map-link"
                                     href="https://www.google.com/maps/search/?api=1&amp;query=Firstbahn+Grindelwald"
                                     rel="noopener noreferrer" target="_blank"
@@ -989,10 +1208,6 @@
                               </div>
                               <div class="day-links-grid">
                                  <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Grindelwald+Switzerland"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🏨 住宿區域｜Grindelwald</a>
-                                 <a class="day-link map-link"
                                     href="https://www.google.com/maps/search/?api=1&amp;query=Grindelwald+Terminal"
                                     rel="noopener noreferrer" target="_blank"
                                     >🚡 Grindelwald Terminal</a>
@@ -1085,10 +1300,6 @@
                               </div>
                               <div class="day-links-grid">
                                  <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Grindelwald+Switzerland"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🏨 住宿區域｜Grindelwald</a>
-                                 <a class="day-link map-link"
                                     href="https://www.google.com/maps/search/?api=1&amp;query=Meiringen+Switzerland"
                                     rel="noopener noreferrer"
                                     target="_blank"
@@ -1178,10 +1389,6 @@
                               </div>
                               <div class="day-links-grid">
                                  <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Zermatt+Switzerland"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🏨 住宿區域｜Zermatt</a>
-                                 <a class="day-link map-link"
                                     href="https://www.google.com/maps/search/?api=1&amp;query=Zermatt+Bahnhof"
                                     rel="noopener noreferrer" target="_blank"
                                     >🚉 Zermatt Bahnhof</a>
@@ -1192,11 +1399,7 @@
                                  <a class="day-link map-link"
                                     href="https://www.google.com/maps/search/?api=1&amp;query=Gornergrat"
                                     rel="noopener noreferrer" target="_blank"
-                                    >🏔 Gornergrat ↗</a>
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/dir/?api=1&amp;origin=Grindelwald+Switzerland&amp;destination=Zermatt+Switzerland"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🧭 Grindelwald → Zermatt</a>
+                                    >🏔 Gornergrat</a>
                                  <a class="day-link ticket-link"
                                     href="https://www.sbb.ch/en"
                                     rel="noopener noreferrer" target="_blank"
@@ -1273,10 +1476,6 @@
                                  📍 Google Maps｜相關連結
                               </div>
                               <div class="day-links-grid">
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=St+Moritz+Switzerland"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🏨 住宿區域｜St. Moritz</a>
                                  <a class="day-link map-link"
                                     href="https://www.google.com/maps/search/?api=1&amp;query=Zermatt+Bahnhof"
                                     rel="noopener noreferrer" target="_blank"
@@ -1373,14 +1572,6 @@
                                     href="https://www.google.com/maps/search/?api=1&amp;query=St+Moritz+Bahnhof"
                                     rel="noopener noreferrer" target="_blank"
                                     >🚉 St. Moritz Bahnhof</a>
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/search/?api=1&amp;query=Zurich+Airport"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >✈️ Zürich Airport</a>
-                                 <a class="day-link map-link"
-                                    href="https://www.google.com/maps/dir/?api=1&amp;origin=St+Moritz+Switzerland&amp;destination=Zurich+Airport"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🧭 St. Moritz → Zürich Airport</a>
                                  <a class="day-link ticket-link"
                                     href="https://www.sbb.ch/en"
                                     rel="noopener noreferrer" target="_blank"
@@ -1417,23 +1608,28 @@
                            <h3 class="font-black text-slate-900">Oktoberfest</h3>
                            <span class="text-[11px] font-bold text-emerald-800">Day 01</span>
                         </div>
-                        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
-                           慕尼黑啤酒節主會場位於 Theresienwiese。兩天分別安排初體驗與不同帳篷，保留彈性給現場氣氛與人潮。
-                        </p>
+                        <ul class="mt-3 list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed marker:text-slate-400">
+                           <li>慕尼黑啤酒節主會場位於 Theresienwiese，慕尼黑中央車站的西南邊，走路 10 到 15 分鐘</li>
+                           <li>週一到週四中午前進去比較容易找得到空位</li>
+                           <li>進入會場需安檢，包包容量上限 3 公升、或 20 × 15 × 10 公分以內（小斜背包或迷你後背包）</li>
+                           <li>可以帶飲料進場地，但不能帶進帳篷和啤酒花園，不行帶玻璃瓶</li>
+                           <li>可以帶雨傘，不能帶噴霧罐、刀具與任何尖銳物品</li>
+                        </ul>
                      </div>
                      <div class="p-4">
                         <div class="guide-meta">
                            <div class="guide-meta-item">
-                              <strong class="block text-slate-800">🕒 2027 時間</strong>9/18–10/3；每日時段出發前確認
+                              <strong class="block text-slate-800">🕒 2027 時間</strong>9/18–10/3<br>一至四 10:00 ～ 23:30；五六 10:00 ～ 00:00<br>
+                              22:30 最後一杯
                            </div>
                            <div class="guide-meta-item">
-                              <strong class="block text-slate-800">🎟️ 費用</strong>園區入場通常免費；帳篷預約另計
+                              <strong class="block text-slate-800">🎟️ 費用</strong>主場地和帳篷免費進場<br>老啤酒節進場費 4 歐元，晚上 9 點後免費入場
                            </div>
                            <div class="guide-meta-item">
                               <strong class="block text-slate-800">⏱️ 建議停留</strong>半天～晚上
                            </div>
                            <div class="guide-meta-item">
-                              <strong class="block text-slate-800">📍 行程</strong>Day 01
+                              <strong class="block text-slate-800">☀️ 策略</strong>10 點到 11 點半進大帳篷<br>下午逛遊樂設施和攤位<br>傍晚去啤酒花園、小帳篷或老啤酒節<br>晚上 9 點後老啤酒節，或回主場看大帳篷外面的燈
                            </div>
                         </div>
                         <div class="day-links-grid mt-3">
@@ -1452,6 +1648,122 @@
                            <a class="day-link guide-jump return-day-link"
                               href="#day-01"
                               >📅 回到 Day 01 行程</a>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="guide-card" id="guide-munich">
+                     <img alt="Munich 市區景點" class="guide-image" decoding="async" loading="lazy" src="images/munich.jpg"/>
+                     <div class="guide-card-head">
+                        <div class="text-2xl mb-2">🏰</div>
+                        <div class="flex items-center justify-between gap-3">
+                           <h3 class="font-black text-slate-900">Munich</h3>
+                           <span class="text-[11px] font-bold text-emerald-800">Day 02</span>
+                        </div>
+                        <ul class="mt-3 list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed marker:text-slate-400">
+                           <li>地鐵日票MVV Münchner Verkehrs- and Tarifverbund Airport-City-Day-Ticket</li>
+                           <li>機場在Zone 5；市區在Zone M</li>
+                           <li>票價：單程14.3，日票16.3，團票(2-5p)30.5</li>
+                           <li>生效期間：購買當下到隔日早上6點</li>
+                        </ul>
+                     </div>
+                     <div class="p-4">
+                        <div class="guide-meta">
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 卡爾門 Karlstor</strong>中世紀城牆遺跡<br>
+                              <a href="https://maps.app.goo.gl/GgXVB14TzRN8LDRj7"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 聖米歇爾教堂 St. Michael</strong>營業時間：一至六 09:30 ～ 19:00<br>
+                              聖米歇爾教堂附近的公豬是每位旅客都會去拍照打卡的景點。只要摸摸公豬就會帶來財富，並為自己事業都帶來豐收，這個不知從何而來的傳說早就已經成為大家深信不疑的事<br>
+                              <a href="https://maps.app.goo.gl/mmuVp2kK1c7aoSWG7"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 聖母教堂 Frauenkirche</strong>營業時間：一至六 10:00 ～ 17:00；日 11:30 ～ 17:00<br>最後登頂時間16:30<br>
+                              票價： 7.5 歐<br>老城區最高的建築，根據慕尼黑的地方法規，市中心任何新建物都不可以超過聖母教堂的高度，也因此聖母教堂是慕尼黑市區最高建築，也是市區最佳的眺望點<br>
+                              <a href="https://maps.app.goo.gl/S2tZURDdRsGkZyun7"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 聖彼得教堂 St. Peter</strong>營業時間：一至五 09:00 ～ 18:30；六日 09:00 ～ 19:30<br>票價： 5 歐<br>
+                              慕尼黑現存最古老的教堂，推薦登頂（ 300 階梯）俯瞰整個瑪利亞廣場和慕尼黑市景，甚至還能眺望到遠方的阿爾卑斯山脈<br>
+                              <a href="https://maps.app.goo.gl/34EziNwfijyGd89L9"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 木偶報時鐘 Rathaus-Glockenspiel</strong>營業時間： 11、12、17 點
+                              鐘琴會上演兩段來自 16 世紀的歷史故事，整個表演約 12 ～ 15 分鐘，是整個廣場最著名的表演<br>
+                              <a href="https://maps.app.goo.gl/JtZmaWPdoyQQpPkVA"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 瑪利亞圓柱 Mariensäule</strong>慶祝三十年戰爭期間瑞典佔領的結束<br>
+                              <a href="https://maps.app.goo.gl/k8yPfrMpi6crdkUb9"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 慕尼黑舊市政廳 Toy Museum Munich</strong>營業時間：三至一 10:00 ～ 17:30<br>票價：8 歐<br>
+                              已經改裝為 4 層樓的玩具博物館，裡面收藏了各式各樣的古董玩具<br>
+                              <a href="https://maps.app.goo.gl/oytcmcBXhufaVXha8"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 慕尼黑王宮 Residenz München</strong>營業時間： 10:00 ～ 17:00<br>票價： 10 歐，有免費語音導覽<br>
+                              需預留 1.5 ～ 2 個小時<br>德國佔地最廣的城市宮殿，是歷任巴伐利亞君王、公爵、王子最主要居所，不僅收藏種類繁多的皇家藝術品，更號稱擁有全歐洲最豪華的室內設計<br>
+                              <a href="https://maps.app.goo.gl/oMhjLYEm7JAUbLX88"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 皇家啤酒屋 Hofbräuhaus München</strong>營業時間： 11:00 ～ 00:00<br>
+                              一間擁有超過 400 年歷史的啤酒屋，也是慕尼黑最古老、最著名的啤酒屋之一，更是巴伐利亞啤酒文化的象徵！點一杯經典的HB啤酒、參觀二樓啤酒屋<br>
+                              <a href="https://maps.app.goo.gl/Gvjs9SHkHRhWxJN47"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 穀物市場 Viktualienmarkt</strong>營業時間：一至六 08:00 ～ 20:00<br>
+                              德國椒鹽麵包 Pretzel 、巴伐利亞肉餅三明治 Leberkäse Semmel<br>
+                              <a href="https://maps.app.goo.gl/XfFcC7zpCL8VGFvq6"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 三明治肉舖 Vinzenzmurr</strong>營業時間：一至六 10:00 ～ 18:00<br>
+                              脆皮五花三明治 Krustensemmel 真的超好吃<br>
+                              慕尼黑一家百年傳統肉舖，一開始就只是一家在慕尼黑的小型的肉舖，營業超過 120 年，現在遍布整個巴伐利亞，變成當地連鎖店<br>
+                              <a href="https://maps.app.goo.gl/tRFnBkxPrx8ovFmW7"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                        </div>
+                        <div class="day-links-grid mt-3">
+                           <a class="day-link ticket-link"
+                              href="https://rosaroundtheworld.com/oldtown-munich/"
+                              rel="noopener noreferrer" target="_blank"
+                              >🔗 慕尼黑攻略</a>
+                           <a class="day-link guide-jump return-day-link"
+                              href="#day-02"
+                              >📅 回到 Day 02 行程</a>
                         </div>
                      </div>
                   </article>
@@ -1704,6 +2016,78 @@
                            <a class="day-link guide-jump return-day-link"
                               href="#day-10"
                               >📅 回到 Day 10 行程</a>
+                        </div>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </details>
+         <details class="major-section scroll-mt-24" id="food-guide">
+            <summary class="major-summary">
+               <span class="major-summary-title"><span>🍴️</span>必吃美食</span>
+               <span aria-hidden="true" class="major-chevron">▼</span>
+            </summary>
+            <div class="major-content">
+               <div class="guide-grid">
+                  <article class="guide-card" id="guide-german-food">
+                     <img alt="德國巴伐利亞美食" class="guide-image" decoding="async" loading="lazy" src="images/german-food.jpg"/>
+                     <div class="guide-card-head">
+                        <div class="text-2xl mb-2">🥨</div>
+                        <div class="flex items-center justify-between gap-3">
+                           <h3 class="font-black text-slate-900">德國必吃</h3>
+                        </div>
+                        <p class="mt-2 text-xs text-slate-600 leading-relaxed">慕尼黑以巴伐利亞料理為主，啤酒節與舊城區都能找到經典德國料理。 豬腳、白香腸、Pretzel 與 Obatzda 都很適合安排在這兩天。</p>
+                     </div>
+                     <div class="p-4">
+                        <div class="space-y-3 text-xs text-slate-600">
+                           <div><strong class="block text-slate-800">🍖 Schweinshaxe</strong>德國豬腳｜外皮酥脆，通常搭配酸菜與馬鈴薯。</div>
+                           <div><strong class="block text-slate-800">🌭 Weißwurst</strong>慕尼黑白香腸｜傳統搭配甜芥末與 Brezn。</div>
+                           <div><strong class="block text-slate-800">🥨 Brezn</strong>巴伐利亞 Pretzel｜啤酒節最經典的小吃之一。</div>
+                           <div><strong class="block text-slate-800">🧀 Obatzda</strong>巴伐利亞起司抹醬｜通常搭配 Brezn 一起吃。</div>
+                           <div><strong class="block text-slate-800">🥞 Kaiserschmarrn</strong>撕碎的鬆軟煎餅，搭配糖粉與水果醬。</div>
+                           <div><strong class="block text-slate-800">🍎 Apfelstrudel</strong>經典蘋果捲｜適合當作德式午餐或晚餐後甜點。</div>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="guide-card" id="guide-swiss-food">
+                     <img alt="德國巴伐利亞美食" class="guide-image" decoding="async" loading="lazy" src="images/swiss-food.jpg"/>
+                     <div class="guide-card-head">
+                        <div class="text-2xl mb-2">🫕</div>
+                        <div class="flex items-center justify-between gap-3">
+                           <h3 class="font-black text-slate-900">瑞士必吃</h3>
+                        </div>
+                        <p class="mt-2 text-xs text-slate-600 leading-relaxed">瑞士各地都有不同的地方料理，可以配合每天所在城市安排。 起司鍋、Rösti 與山區料理尤其適合這趟秋季行程。</p>
+                     </div>
+                     <div class="p-4">
+                        <div class="space-y-3 text-xs text-slate-600">
+                           <div>
+                              <strong class="block text-slate-800">🫕 Cheese Fondue</strong>瑞士起司鍋｜將麵包沾入融化起司，是最經典的瑞士料理之一。
+                              <span class="block mt-1 text-[11px] font-bold text-emerald-800">📍 Lucerne</span>
+                           </div>
+                           <div>
+                              <strong class="block text-slate-800">🧀 Raclette</strong>烤融 Raclette 起司，通常搭配馬鈴薯、酸黃瓜與醃洋蔥。
+                              <span class="block mt-1 text-[11px] font-bold text-emerald-800">📍 Zermatt</span>
+                           </div>
+                           <div>
+                              <strong class="block text-slate-800">🥔 Rösti</strong>瑞士薯餅｜外層香脆，是瑞士非常代表性的料理。
+                              <span class="block mt-1 text-[11px] font-bold text-emerald-800">📍 Zürich / Lucerne</span>
+                           </div>
+                           <div>
+                              <strong class="block text-slate-800">🍽️ Zürcher Geschnetzeltes</strong>蘇黎世經典小牛肉料理，搭配奶油蘑菇醬，通常與 Rösti 一起享用。
+                              <span class="block mt-1 text-[11px] font-bold text-emerald-800">📍 Zürich</span>
+                           </div>
+                           <div>
+                              <strong class="block text-slate-800">🧀 Älplermagronen</strong>瑞士山區通心粉｜起司、馬鈴薯與洋蔥組合，常搭配蘋果泥。
+                              <span class="block mt-1 text-[11px] font-bold text-emerald-800">📍 Grindelwald</span>
+                           </div>
+                           <div>
+                              <strong class="block text-slate-800">🥧 Bündner Nusstorte</strong>恩加丁核桃派｜焦糖核桃內餡，是 Graubünden 地區代表甜點。
+                              <span class="block mt-1 text-[11px] font-bold text-emerald-800">📍 St. Moritz</span>
+                           </div>
+                           <div>
+                              <strong class="block text-slate-800">🍫 Swiss Chocolate</strong>瑞士巧克力｜行程途中看到喜歡的巧克力店就可以安排試吃或當伴手禮。
+                              <span class="block mt-1 text-[11px] font-bold text-emerald-800">📍 Switzerland</span>
+                           </div>
                         </div>
                      </div>
                   </article>
