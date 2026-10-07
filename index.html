@@ -381,12 +381,11 @@
       </style>
    </head>
    <body class="min-h-screen flex flex-col antialiased selection:bg-[#2f5d50] selection:text-white">
-      <!-- Hero Header -->
+      <!-- Header -->
       <header class="hero-bg text-white pt-8 pb-14 px-4 sm:px-8 shadow-xl relative overflow-hidden">
          <!-- Subtle Background Cross Pattern -->
-         <div class="absolute -right-10 -bottom-10 opacity-5 pointer-events-none select-none text-white text-[240px] font-black leading-none">
-            +
-         </div>
+         <div class="absolute -right-10 -bottom-10 opacity-5 pointer-events-none select-none text-white text-[240px]
+            font-black leading-none">+</div>
          <div class="max-w-5xl mx-auto">
             <nav class="flex justify-between items-center text-xs sm:text-sm font-medium tracking-wider">
                <span class="bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-white/90 border border-white/20">
@@ -403,26 +402,32 @@
             </div>
          </div>
       </header>
+
       <!-- Main Content Container -->
       <main class="flex-grow max-w-5xl w-full mx-auto px-4 sm:px-6 py-10">
+
+         <!-- Reminders -->
          <details class="major-section scroll-mt-24" id="reminders" open="">
             <summary class="major-summary">
                <span class="major-summary-title"><span>💡</span>預訂重要提醒事項</span>
                <span aria-hidden="true" class="major-chevron">▼</span>
             </summary>
             <div class="major-content">
-               <!-- Reminder Card -->
                <div class="flex items-start gap-3 text-xs sm:text-sm text-slate-700">
                   <div class="flex-1">
                      <ul class="list-disc pl-5 space-y-1.5 marker:text-slate-700">
-                        <li>慕尼黑啤酒節 2027 已確定於 <strong>9月18日 — 10月3日</strong> 舉行。</li>
-                        <li>瑞士高山纜車（如 Gelmerbahn）及冰河列車 (Glacier Express) 2027營運時刻表通常於出發前半年陸續公布。</li>
-                        <li>購買不可退款機票與飯店前，重新核對 <strong>2027/10/02 Glacier Express</strong> 的預約與營運狀況。</li>
+                        <li>冰河列車： Zermatt → Andermatt，再轉往 Grindelwald。</li>
+                        <li>9/26、9/27 為少女峰與 First 機動日，依 Livecam／能見度彈性互換。</li>
+                        <li>9/29、9/30 為皮拉圖斯山機動日，選天氣較好的一天上山。</li>
+                        <li>9 月底山區日照與纜車營運時間較夏季短，2027 官方時刻公布後再微調每日出發時間。</li>
+                        <li>2027 年慕尼黑啤酒節於 9/18—10/3 舉行。</li>
                      </ul>
                   </div>
                </div>
             </div>
          </details>
+
+         <!-- Route Overview -->
          <details class="major-section scroll-mt-24" id="route-overview" open="">
             <summary class="major-summary">
                <span class="major-summary-title"><span>🧭</span>動線總覽</span>
@@ -431,33 +436,26 @@
             <div class="major-content">
                <!-- Route Overview -->
                <div class="flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm">
-                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold border border-blue-200">
-                     慕尼黑 · 1 晚
-                  </span>
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold
+                     border border-blue-200">策馬特 · 2 晚</span>
                   <span class="text-gray-400 font-bold">→</span>
-                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#f8fafc] text-[#475569] font-bold border border-[#cbd5e1]">
-                     蘇黎世（停留）
-                  </span>
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#f8fafc] text-[#475569] font-bold
+                     border border-[#cbd5e1]">冰河列車</span>
                   <span class="text-gray-400 font-bold">→</span>
-                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold border border-blue-200">
-                     琉森 · 3 晚
-                  </span>
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold
+                     border border-blue-200">格林德瓦 · 3 晚</span>
                   <span class="text-gray-400 font-bold">→</span>
-                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#f8fafc] text-[#475569] font-bold border border-[#cbd5e1]">
-                     因特拉肯（停留）
-                  </span>
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#f8fafc] text-[#475569] font-bold
+                     border border-[#cbd5e1]">因特拉肯（停留）</span>
                   <span class="text-gray-400 font-bold">→</span>
-                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold border border-blue-200">
-                     格林德瓦 · 4 晚
-                  </span>
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold
+                     border border-blue-200">琉森 · 3 晚</span>
                   <span class="text-gray-400 font-bold">→</span>
-                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold border border-blue-200">
-                     策馬特 · 1 晚
-                  </span>
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#f8fafc] text-[#475569] font-bold
+                     border border-[#cbd5e1]">蘇黎世（停留）</span>
                   <span class="text-gray-400 font-bold">→</span>
-                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold border border-blue-200">
-                     聖莫里茲 · 1 晚
-                  </span>
+                  <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-blue-100 text-blue-900 font-bold
+                     border border-blue-200">慕尼黑 · 2 晚</span>
                </div>
 
                <!-- Illustrated itinerary map -->
@@ -467,49 +465,24 @@
                </figure>
             </div>
          </details>
+
+         <!-- Accommodation Overview -->
          <details class="major-section scroll-mt-24" id="accommodation">
             <summary class="major-summary">
                <span class="major-summary-title"><span>🏨</span>住宿總覽</span>
                <span aria-hidden="true" class="major-chevron">▼</span>
             </summary>
             <div class="major-content">
-               <!-- Accommodation Overview -->
                <div class="stay-overview-grid">
 
-                  <!-- Munich -->
+                  <!-- Zermatt -->
                   <article class="stay-overview-card">
                      <div class="stay-overview-top">
-                        <span class="stay-overview-city">🇩🇪 MUNICH</span>
-                        <span class="stay-overview-nights">1 晚</span>
-                     </div>
-                     <div class="stay-overview-name">Hotel Obermaier</div>
-                     <div class="stay-overview-date">9/23 → 9/24</div>
-                     <div class="stay-overview-info">
-                        <div class="stay-overview-item"><strong>📅 Check-in</strong>15:00～23:30</div>
-                        <div class="stay-overview-item"><strong>📅 Check-out</strong>11:00 前</div>
-                        <div class="stay-overview-item"><strong>🛏️ 房型</strong>Junior Suite with Gallery<br/>一張雙人床、兩張單人床、一張沙發床</div>
-                        <div class="stay-overview-item"><strong>📝 備註</strong>8/23 前可免費取消，含早餐</div>
-                     </div>
-                     <div class="stay-overview-links">
-                        <a class="day-link ticket-link"
-                           href="https://www.booking.com/Share-mqzcePT"
-                           rel="noopener noreferrer" target="_blank"
-                           >🏨 Booking</a>
-                        <a class="day-link map-link"
-                           href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Obermaier+Munich"
-                           rel="noopener noreferrer" target="_blank"
-                           >📍 Google Maps</a>
-                     </div>
-                  </article>
-
-                  <!-- Lucerne -->
-                  <article class="stay-overview-card">
-                     <div class="stay-overview-top">
-                        <span class="stay-overview-city">🇨🇭 LUCERNE</span>
-                        <span class="stay-overview-nights">3 晚</span>
+                        <span class="stay-overview-city">🇨🇭 ZERMATT</span>
+                        <span class="stay-overview-nights">2 晚</span>
                      </div>
                      <div class="stay-overview-name">飯店名稱</div>
-                     <div class="stay-overview-date">9/24 → 9/27</div>
+                     <div class="stay-overview-date">9/23 → 9/25</div>
                      <div class="stay-overview-info">
                         <div class="stay-overview-item"><strong>📅 Check-in</strong>15:00～23:30</div>
                         <div class="stay-overview-item"><strong>📅 Check-out</strong>11:00 前</div>
@@ -532,10 +505,10 @@
                   <article class="stay-overview-card">
                      <div class="stay-overview-top">
                         <span class="stay-overview-city">🇨🇭 GRINDELWALD</span>
-                        <span class="stay-overview-nights">4 晚</span>
+                        <span class="stay-overview-nights">3 晚</span>
                      </div>
                      <div class="stay-overview-name">Cosy Swiss Apartment</div>
-                     <div class="stay-overview-date">9/27 → 10/01</div>
+                     <div class="stay-overview-date">9/25 → 9/28</div>
                      <div class="stay-overview-info">
                         <div class="stay-overview-item"><strong>📅 Check-in</strong>16:00～21:00</div>
                         <div class="stay-overview-item"><strong>📅 Check-out</strong>11:00 前</div>
@@ -554,14 +527,14 @@
                      </div>
                   </article>
 
-                  <!-- Zermatt -->
+                  <!-- Lucerne -->
                   <article class="stay-overview-card">
                      <div class="stay-overview-top">
-                        <span class="stay-overview-city">🇨🇭 ZERMATT</span>
-                        <span class="stay-overview-nights">1 晚</span>
+                        <span class="stay-overview-city">🇨🇭 LUCERNE</span>
+                        <span class="stay-overview-nights">3 晚</span>
                      </div>
                      <div class="stay-overview-name">飯店名稱</div>
-                     <div class="stay-overview-date">10/01 → 10/02</div>
+                     <div class="stay-overview-date">9/28 → 10/01</div>
                      <div class="stay-overview-info">
                         <div class="stay-overview-item"><strong>📅 Check-in</strong>15:00～23:30</div>
                         <div class="stay-overview-item"><strong>📅 Check-out</strong>11:00 前</div>
@@ -580,19 +553,19 @@
                      </div>
                   </article>
 
-                  <!-- St. Moritz -->
+                  <!-- Munich -->
                   <article class="stay-overview-card">
                      <div class="stay-overview-top">
-                        <span class="stay-overview-city">🇨🇭 ST. MORITZ</span>
-                        <span class="stay-overview-nights">1 晚</span>
+                        <span class="stay-overview-city">🇩🇪 MUNICH</span>
+                        <span class="stay-overview-nights">2 晚</span>
                      </div>
-                     <div class="stay-overview-name">飯店名稱</div>
-                     <div class="stay-overview-date">10/02 → 10/03</div>
+                     <div class="stay-overview-name">Hotel Obermaier</div>
+                     <div class="stay-overview-date">10/01 → 10/03</div>
                      <div class="stay-overview-info">
                         <div class="stay-overview-item"><strong>📅 Check-in</strong>15:00～23:30</div>
                         <div class="stay-overview-item"><strong>📅 Check-out</strong>11:00 前</div>
-                        <div class="stay-overview-item"><strong>🛏️ 房型</strong>房型<br/>配置</div>
-                        <div class="stay-overview-item"><strong>📝 備註</strong>8/23 前可免費取消</div>
+                        <div class="stay-overview-item"><strong>🛏️ 房型</strong>Junior Suite with Gallery<br/>一張雙人床、兩張單人床、一張沙發床</div>
+                        <div class="stay-overview-item"><strong>📝 備註</strong>8/23 前可免費取消，含早餐</div>
                      </div>
                      <div class="stay-overview-links">
                         <a class="day-link ticket-link"
@@ -608,6 +581,8 @@
                </div>
             </div>
          </details>
+
+         <!-- Itinerary -->
          <details class="major-section scroll-mt-24" id="itinerary" open="">
             <summary class="major-summary">
                <span class="major-summary-title"><span>📅</span>詳細行程</span>
@@ -617,17 +592,20 @@
                <!-- Interactive Controls & Filters Bar -->
                <section class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
                   <div class="flex items-center gap-2 sm:gap-3 sm:ml-auto">
-                     <button class="px-2.5 py-1.5 text-xs font-bold rounded-lg border border-slate-300 bg-white hover:bg-slate-50 inline-flex items-center gap-1.5"
-                        id="toggle-all-days" onclick="toggleAllDays()" type="button">
+                     <button class="px-2.5 py-1.5 text-xs font-bold rounded-lg border border-slate-300 bg-white hover:bg-slate-50
+                        inline-flex items-center gap-1.5" id="toggle-all-days" onclick="toggleAllDays()" type="button">
                         <span id="toggle-all-icon">▴</span>
                         <span id="toggle-all-label">全部收合</span>
                      </button>
                      <!-- Search / Filter Input -->
                      <div class="relative">
-                        <input class="pl-8 pr-3 py-1.5 text-xs rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent w-40 sm:w-48"
+                        <input class="pl-8 pr-3 py-1.5 text-xs rounded-lg border border-slate-300 focus:outline-none focus:ring-2
+                           focus:ring-emerald-600 focus:border-transparent w-40 sm:w-48"
                            id="itinerary-search" oninput="filterItinerary()" placeholder="搜尋地點或關鍵字..." type="text"/>
-                        <svg class="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-                           <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                        <svg class="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" fill="none" stroke="currentColor"
+                             viewbox="0 0 24 24">
+                           <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round"
+                                 stroke-width="2"></path>
                         </svg>
                      </div>
                   </div>
@@ -635,17 +613,17 @@
                <!-- Vertical Day-by-Day Stack -->
                <div class="space-y-6 relative">
                   <!-- DAY 1 -->
-                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300 transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800"
-                     id="day-01">
+                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300
+                     transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800" id="day-01">
                      <details class="day-details">
                         <summary class="day-summary">
                            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-100">
                               <div class="flex items-center gap-3">
                                  <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 01</span>
                                  <span class="text-xs font-bold text-slate-500">9/23 (四)</span>
-                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：慕尼黑</span>
+                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：策馬特</span>
                               </div>
-                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">抵達慕尼黑 + 啤酒節</h3>
+                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">抵達米蘭 → 策馬特</h3>
                            </div>
                            <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
                         </summary>
@@ -657,33 +635,52 @@
                                  <div class="transport-leg">
                                     <div><div class="transport-place">Amsterdam (AMS)</div><div class="transport-sub">08:15</div></div>
                                     <div class="transport-arrow">→</div>
-                                    <div><div class="transport-place">Munich (MUC)</div><div class="transport-sub">09:40</div></div>
+                                    <div><div class="transport-place">Milan (MXP)</div><div class="transport-sub">09:40</div></div>
+                                 </div>
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Milano Malpensa (MXP)</div><div class="transport-sub">18:35</div></div>
+                                    <div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Brig / Visp</div><div class="transport-sub">19:25</div></div>
+                                 </div>
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Brig / Visp</div><div class="transport-sub">18:35</div></div>
+                                    <div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Zermatt</div><div class="transport-sub">19:25</div></div>
                                  </div>
                               </div>
                               <div class="transport-note">🎟️ 航班尚未確定｜訂票後補上航空公司、航班號、航廈與行李資訊。</div>
+                              <div class="day-links-grid mt-3">
+                                 <a class="day-link ticket-link"
+                                    href="https://www.sbb.ch/en"
+                                    rel="noopener noreferrer" target="_blank"
+                                    >🚆 SBB 官方時刻 / 訂票</a>
+                              </div>
                            </div>
                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-sky-800">🌅 上午</strong>
+                                 <p class="text-slate-600 leading-relaxed">
+                                    早上抵達米蘭 MXP，完成入境、領行李後直接往瑞士移動。
+                                 </p>
+                              </div>
+                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">☀️️ 下午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    到飯店寄放行李後，前往 Theresienwiese 特蕾西婭草坪體驗德國啤酒節。
+                                    經 Brig / Visp 轉車前往 Zermatt。抵達後 check-in，以小鎮散步、找 Matterhorn 第一眼為主。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌙 晚上</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    德國啤酒節 或 回住宿休息。
+                                    Bahnhofstrasse、Kirchbrücke 一帶散步，早點休息。
                                  </p>
                               </div>
                            </div>
                            <div class="day-links">
                               <div class="day-links-grid">
                                  <a class="day-link guide-jump"
-                                    href="#guide-oktoberfest"
-                                    >ℹ️ 景點指南 | Oktoberfest</a>
-                                 <a class="day-link guide-jump"
-                                    href="#guide-munich"
-                                    >ℹ️ 景點指南 | Munich</a>
+                                    href="#guide-zermatt"
+                                    >ℹ️ 景點指南 | Zermatt</a>
                               </div>
                            </div>
                            <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
@@ -692,24 +689,24 @@
                                  <span>備案 Plan B</span>
                               </summary>
                               <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
-                                 若中午後才會抵達啤酒節會場，改去舊城區及酒吧。
+                                 正式訂票時依實際落地時間留足入境與轉車緩衝。
                               </div>
                            </details>
                         </div>
                      </details>
                   </article>
                   <!-- DAY 2 -->
-                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300 transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800"
-                     id="day-02">
+                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300
+                     transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800" id="day-02">
                      <details class="day-details">
                         <summary class="day-summary">
                            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-100">
                               <div class="flex items-center gap-3">
                                  <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 02</span>
                                  <span class="text-xs font-bold text-slate-500">9/24 (五)</span>
-                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：琉森</span>
+                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：策馬特</span>
                               </div>
-                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">慕尼黑 → 蘇黎世 → 琉森</h3>
+                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">策馬特 + 馬特洪峰</h3>
                            </div>
                            <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
                         </summary>
@@ -718,14 +715,14 @@
                               <div class="transport-title">🚆今日交通</div>
                               <div class="transport-list">
                                  <div class="transport-leg">
-                                    <div><div class="transport-place">Munich Hbf</div><div class="transport-sub">10:55</div></div>
+                                    <div><div class="transport-place">Zermatt</div><div class="transport-sub">10:55</div></div>
                                     <div class="transport-arrow">→</div>
-                                    <div><div class="transport-place">Zurich HB</div><div class="transport-sub">14:28</div></div>
+                                    <div><div class="transport-place">Gornergrat / Rotenboden</div><div class="transport-sub">14:28</div></div>
                                  </div>
                                  <div class="transport-leg">
-                                    <div><div class="transport-place">Zurich HB</div><div class="transport-sub">18:35</div></div>
+                                    <div><div class="transport-place">Gornergrat / Rotenboden</div><div class="transport-sub">18:35</div></div>
                                     <div class="transport-arrow">→</div>
-                                    <div><div class="transport-place">Luzern</div><div class="transport-sub">19:25</div></div>
+                                    <div><div class="transport-place">Zermatt</div><div class="transport-sub">19:25</div></div>
                                  </div>
                               </div>
                               <div class="day-links-grid mt-3">
@@ -739,27 +736,27 @@
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-sky-800">🌅 上午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    搭乘跨國列車由慕尼黑前往蘇黎世，寄放行李於蘇黎世中央車站。
+                                    起床先確認 Matterhorn、Gornergrat 即時天氣與 Livecam；晴朗就優先上山。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-sky-800">☀️ 下午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    3–4 小時蘇黎世精華：班霍夫大街、林登霍夫山丘俯瞰舊城、蘇黎世湖畔。
+                                    搭 Gornergrat Railway，上 Gornergrat 看 Matterhorn；回程於 Rotenboden 下車前往 Riffelsee，天氣好時可看經典倒影。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-sky-800">🌙 晚上</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    轉乘前往琉森，享用琉森湖畔餐廳晚餐。
+                                    策馬特鎮上小木屋特色餐廳晚餐，欣賞馬特洪峰夕照黃金角。
                                  </p>
                               </div>
                            </div>
                            <div class="day-links">
                               <div class="day-links-grid">
                                  <a class="day-link guide-jump"
-                                    href="#guide-zurich"
-                                    >ℹ️ 景點指南 | Zurich</a>
+                                    href="#guide-gornergrat"
+                                    >ℹ️ 景點指南 | Gornergrat</a>
                               </div>
                            </div>
                            <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
@@ -768,14 +765,15 @@
                                  <span>備案 Plan B</span>
                               </summary>
                               <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
-                                 若跨國班次誤點，取消蘇黎世快閃，直接由列車轉乘至琉森飯店入住。
+                                 只要看到山峰露出頭，優先將 Gornergrat 齒軌列車或冰川天堂登頂排在第一順位。
                               </div>
                            </details>
                         </div>
                      </details>
                   </article>
                   <!-- DAY 3 -->
-                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300 transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800"
+                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300
+                     transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800"
                      id="day-03">
                      <details class="day-details">
                         <summary class="day-summary">
@@ -783,31 +781,59 @@
                               <div class="flex items-center gap-3">
                                  <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 03</span>
                                  <span class="text-xs font-bold text-slate-500">9/25 (六)</span>
-                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：琉森</span>
+                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：格林德瓦</span>
                               </div>
-                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">琉森市區 + 機動日</h3>
+                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">冰河列車</h3>
                            </div>
                            <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
                         </summary>
                         <div class="day-content">
+                           <div class="transport-card">
+                              <div class="transport-title">🚆今日交通</div>
+                              <div class="transport-list">
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Zermatt</div><div class="transport-sub">10:55</div></div>
+                                    <div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Andermatt</div><div class="transport-sub">14:28</div></div>
+                                 </div>
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Andermatt</div><div class="transport-sub">18:35</div></div>
+                                    <div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Grindelwald</div><div class="transport-sub">19:25</div></div>
+                                 </div>
+                              </div>
+                              <div class="day-links-grid mt-3">
+                                 <a class="day-link ticket-link"
+                                    href="https://www.sbb.ch/en"
+                                    rel="noopener noreferrer" target="_blank"
+                                    >🚆 SBB 官方時刻 / 訂票</a>
+                              </div>
+                           </div>
                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-sky-800">🌅 上午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    琉森市區
+                                    退房後搭 Glacier Express，安排 Zermatt → Andermatt 區段，保留真正的冰河列車體驗。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-sky-800">☀️ 下午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    3–4 小時蘇黎世精華：班霍夫大街、林登霍夫山丘俯瞰舊城、蘇黎世湖畔；隨後轉乘前往琉森。
+                                    抵達 Andermatt 後轉一般列車往 Grindelwald。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-sky-800">🌙 晚上</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    夜間漫步地標卡貝爾橋 (Chapel Bridge)，享用琉森湖畔餐廳晚餐。
+                                    抵達 Grindelwald、入住，採買接下來兩天山區行程需要的補給。
                                  </p>
+                              </div>
+                           </div>
+                           <div class="day-links">
+                              <div class="day-links-grid">
+                                 <a class="day-link guide-jump"
+                                    href="#guide-glacier"
+                                    >ℹ️ 景點指南 | Glacier Express</a>
                               </div>
                            </div>
                            <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
@@ -816,14 +842,15 @@
                                  <span>備案 Plan B</span>
                               </summary>
                               <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
-                                 9/25 、 9/26 選天氣好的那天去皮拉圖斯山。
+                                 需提前確認 2027 秋季維護保養時程，若冰河列車班次調整，可利用瑞士國鐵 (SBB) 普通車分段連貫。
                               </div>
                            </details>
                         </div>
                      </details>
                   </article>
                   <!-- DAY 4 -->
-                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300 transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800"
+                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300
+                     transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800"
                      id="day-04">
                      <details class="day-details">
                         <summary class="day-summary">
@@ -831,57 +858,52 @@
                               <div class="flex items-center gap-3">
                                  <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 04</span>
                                  <span class="text-xs font-bold text-slate-500">9/26 (日)</span>
-                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：琉森</span>
+                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：格林德瓦</span>
                               </div>
-                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">皮拉圖斯山 + Fräkigaudi 夏日雪橇</h3>
+                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">少女峰 + 艾格冰川</h3>
                            </div>
                            <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
                         </summary>
                         <div class="day-content">
-                            <div class="transport-card">
-                               <div class="transport-title">🚆 今日交通</div>
-                               <div class="transport-list">
-                                  <div class="transport-leg">
-                                     <div><div class="transport-place">Luzern</div><div class="transport-sub">市區出發</div></div>
-                                     <div class="transport-arrow">→</div>
-                                     <div><div class="transport-place">Fräkmüntegg / Pilatus Kulm</div><div class="transport-sub">Kriens 上山</div></div></div>
-                                  <div class="transport-leg">
-                                     <div><div class="transport-place">Pilatus Kulm</div><div class="transport-sub">山頂</div></div>
-                                     <div class="transport-arrow">→</div>
-                                     <div><div class="transport-place">Alpnachstad → Luzern</div><div class="transport-sub">齒軌鐵路下山後返回琉森</div></div></div>
-                               </div>
-                               <div class="transport-note">🕒 纜車、齒軌鐵路與 Fräkigaudi 2027 秋季營運時間待官方公布。</div>
-                            </div>
+                           <div class="transport-card">
+                              <div class="transport-title">🚆 今日交通</div>
+                              <div class="transport-list">
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Grindelwald</div><div class="transport-sub">前往 Grindelwald Terminal</div></div>
+                                    <div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Eigergletscher</div><div class="transport-sub">轉乘齒軌列車</div></div></div>
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Eigergletscher</div><div class="transport-sub">轉乘</div></div>
+                                    <div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Jungfraujoch</div><div class="transport-sub">Top of Europe</div></div></div>
+                              </div>
+                              <div class="transport-note">☀️ 建議當日先看 Livecam 與能見度，再決定是否使用高價登頂票。</div>
+                           </div>
                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-sky-800">🌅 上午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    早起經 Kriens 前往 Fräkmüntegg，優先排隊體驗 Fräkigaudi 夏日雪橇（避開午後人潮）。<br>
-                                    Golden Round Trip｜渡輪＋登山列車：搭渡輪前往 ALPNACHSTAD 碼頭，下船後前往 PILATUS BAHN 搭乘 48 度傾斜齒輪登山列車<br>
-                                    Silver Round Trip｜火車＋登山列車：搭乘火車 S5 於 ALPNACHSTAD 車站下車，出站後搭乘48度傾斜齒輪登山列車
+                                    前往 Grindelwald Terminal 搭乘艾格快線纜車至 Eigergletscher，轉乘齒軌列車登頂歐洲之巔。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-sky-800">☀️ 下午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    登頂皮拉圖斯山 (Pilatus Kulm) 飽覽群山全景，隨後搭乘世界最陡齒軌鐵道下山。
+                                    參觀 Sphinx 觀景台、冰宮 (Ice Palace) 與阿萊奇冰川 (Aletsch Glacier)；下山可經 Kleine Scheidegg 漫步。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-sky-800">🌙 晚上</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    返回琉森舊城區，安排輕鬆優雅的瑞士起司鍋 (Fondue) 晚宴。
+                                    返回格林德瓦，休息補充高海拔消耗的體力。
                                  </p>
                               </div>
                            </div>
                            <div class="day-links">
                               <div class="day-links-grid">
                                  <a class="day-link guide-jump"
-                                    href="#guide-pilatus"
-                                    >ℹ️ 景點指南 | Pilatus</a>
-                                 <a class="day-link guide-jump"
-                                    href="#guide-fraekigaudi"
-                                    >ℹ️ 景點指南 | Fräkigaudi</a>
+                                    href="#guide-jungfrau"
+                                    >ℹ️ 景點指南 | Jungfraujoch</a>
                               </div>
                            </div>
                            <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
@@ -890,15 +912,16 @@
                                  <span>備案 Plan B</span>
                               </summary>
                               <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
-                                 9/25 、 9/26 選天氣好的那天去皮拉圖斯山。
+                                 若少女峰能見度差，與 9/27 First 對調。兩天都先看 Livecam 再決定順序。<br>
+                                 或改至低海拔的瀑布鎮 (Lauterbrunnen) 或布里恩茨湖遊船。
                               </div>
                            </details>
                         </div>
                      </details>
                   </article>
                   <!-- DAY 5 -->
-                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300 transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800"
-                     id="day-05">
+                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300
+                     transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800" id="day-05">
                      <details class="day-details">
                         <summary class="day-summary">
                            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-100">
@@ -907,81 +930,25 @@
                                  <span class="text-xs font-bold text-slate-500">9/27 (一)</span>
                                  <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：格林德瓦</span>
                               </div>
-                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">琉森 → 因特拉肯 → 格林德瓦</h3>
+                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">費爾斯特 (First) + Mountain Cart 山地車</h3>
                            </div>
                            <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
                         </summary>
                         <div class="day-content">
-                            <div class="transport-card">
-                               <div class="transport-title">🚆 今日交通</div>
-                               <div class="transport-list">
-                                  <div class="transport-leg">
-                                     <div><div class="transport-place">Luzern</div><div class="transport-sub">Luzern–Interlaken Express</div></div>
-                                     <div class="transport-arrow">→</div>
-                                     <div><div class="transport-place">Interlaken Ost</div><div class="transport-sub">午餐・短暫停留</div></div></div>
-                                  <div class="transport-leg">
-                                     <div><div class="transport-place">Interlaken Ost</div><div class="transport-sub">下午出發</div></div>
-                                     <div class="transport-arrow">→</div>
-                                     <div><div class="transport-place">Grindelwald</div><div class="transport-sub">入住 4 晚</div></div></div>
-                               </div>
-                               <div class="transport-note">🕒 2027 實際班次待 SBB 時刻表公布後補入。</div>
-                              <div class="day-links-grid mt-3">
-                                 <a class="day-link ticket-link"
-                                    href="https://www.sbb.ch/en"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🚆 SBB 官方時刻 / 訂票</a>
+                           <div class="transport-card">
+                              <div class="transport-title">🚆 今日交通</div>
+                              <div class="transport-list">
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Grindelwald</div><div class="transport-sub">前往 Grindelwald Terminal</div></div>
+                                    <div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">First</div><div class="transport-sub">轉乘齒軌列車</div></div></div>
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">First</div><div class="transport-sub">轉乘</div></div>
+                                    <div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Bachalpsee</div><div class="transport-sub">Top of Europe</div></div></div>
                               </div>
-                            </div>
-                           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
-                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
-                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌅 上午</strong>
-                                 <p class="text-slate-600 leading-relaxed">
-                                    搭乘黃金列車全景路線 (Luzern–Interlaken Express)，沿途欣賞湖光山色。
-                                 </p>
-                              </div>
-                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
-                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">☀️ 下午</strong>
-                                 <p class="text-slate-600 leading-relaxed">
-                                    於因特拉肯停留午餐，前往 Höhematte 大草坪遠眺少女峰與滑翔傘，隨後轉車至格林德瓦。
-                                 </p>
-                              </div>
-                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
-                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌙 晚上</strong>
-                                 <p class="text-slate-600 leading-relaxed">
-                                    入住山城格林德瓦 4 連泊基地，熟悉小鎮環境並採買補給物資。
-                                 </p>
-                              </div>
+                              <div class="transport-note">☀️ 建議當日先看 Livecam 與能見度再決定。</div>
                            </div>
-                           <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
-                              <summary class="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-slate-700 transition">
-                                 <span class="summary-icon text-base">▼</span>
-                                 <span>備案 Plan B</span>
-                              </summary>
-                              <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
-                                 若當日山區晴空萬里，可縮短因特拉肯停留時間，直衝格林德瓦搶先搭乘纜車登山。
-                              </div>
-                           </details>
-                        </div>
-                     </details>
-                  </article>
-                  <!-- DAY 6 -->
-                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300 transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800"
-                     id="day-06">
-                     <details class="day-details">
-                        <summary class="day-summary">
-                           <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-100">
-                              <div class="flex items-center gap-3">
-                                 <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 06</span>
-                                 <span class="text-xs font-bold text-slate-500">9/28 (二)</span>
-                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：格林德瓦</span>
-                              </div>
-                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">
-                                 費爾斯特 (First) + Mountain Cart 山地車
-                              </h3>
-                           </div>
-                           <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
-                        </summary>
-                        <div class="day-content">
                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌅 上午</strong>
@@ -1015,207 +982,67 @@
                                  <span>備案 Plan B</span>
                               </summary>
                               <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
-                                 格林德瓦 4 天行程（First / 少女峰 / Gelmerbahn）可依每日最新山區實時氣象 Livecam 靈活互換。
+                                 依每日最新山區實時氣象 Livecam 靈活互換。
                               </div>
                            </details>
                         </div>
                      </details>
                   </article>
-                  <!-- DAY 7 -->
-                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300 transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800"
-                     id="day-07">
+                  <!-- DAY 6 -->
+                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300
+                     transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800" id="day-06">
                      <details class="day-details">
                         <summary class="day-summary">
                            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-100">
                               <div class="flex items-center gap-3">
-                                 <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 07</span>
-                                 <span class="text-xs font-bold text-slate-500">9/29 (三)</span>
-                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：格林德瓦</span>
+                                 <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 06</span>
+                                 <span class="text-xs font-bold text-slate-500">9/28 (二)</span>
+                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：琉森</span>
                               </div>
-                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">少女峰</h3>
+                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">
+                                 格林德瓦 → 因特拉肯 → 琉森
+                              </h3>
                            </div>
                            <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
                         </summary>
                         <div class="day-content">
-                            <div class="transport-card">
-                               <div class="transport-title">🚆 今日交通</div>
-                               <div class="transport-list">
-                                  <div class="transport-leg">
-                                     <div><div class="transport-place">Grindelwald</div><div class="transport-sub">前往 Grindelwald Terminal</div>
-                                     </div><div class="transport-arrow">→</div>
-                                     <div><div class="transport-place">Eigergletscher</div><div class="transport-sub">轉乘齒軌列車</div></div></div>
-                                  <div class="transport-leg">
-                                     <div><div class="transport-place">Eigergletscher</div><div class="transport-sub">轉乘</div></div>
-                                     <div class="transport-arrow">→</div>
-                                     <div><div class="transport-place">Jungfraujoch</div><div class="transport-sub">Top of Europe</div></div></div>
-                               </div>
-                               <div class="transport-note">🌦️ 建議當日先看 Livecam 與能見度，再決定是否使用高價登頂票。</div>
-                            </div>
-                           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
-                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
-                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌅 上午</strong>
-                                 <p class="text-slate-600 leading-relaxed">
-                                    前往 Grindelwald Terminal 搭乘艾格快線纜車至 Eigergletscher，轉乘齒軌列車登頂歐洲之巔。
-                                 </p>
+                           <div class="transport-card">
+                              <div class="transport-title">🚆 今日交通</div>
+                              <div class="transport-list">
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Grindelwald</div><div class="transport-sub">早上出發</div></div>
+                                    <div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Interlaken Ost</div><div class="transport-sub">午餐・短暫停留</div></div></div>
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Interlaken Ost</div><div class="transport-sub">Luzern–Interlaken Express</div></div>
+                                    <div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Luzern</div><div class="transport-sub">入住 3 晚</div></div></div>
                               </div>
-                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
-                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">☀️ 下午</strong>
-                                 <p class="text-slate-600 leading-relaxed">
-                                    參觀 Sphinx 觀景台、冰宮 (Ice Palace) 與阿萊奇冰川 (Aletsch Glacier)；下山可經 Kleine Scheidegg 漫步。
-                                 </p>
-                              </div>
-                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
-                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌙 晚上</strong>
-                                 <p class="text-slate-600 leading-relaxed">
-                                    返回格林德瓦，休息補充高海拔消耗的體力。
-                                 </p>
-                              </div>
-                           </div>
-                           <div class="day-links">
-                              <div class="day-links-grid">
-                                 <a class="day-link guide-jump"
-                                    href="#guide-jungfrau"
-                                    >ℹ️ 景點指南 | Jungfraujoch</a>
-                              </div>
-                           </div>
-                           <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
-                              <summary class="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-slate-700 transition">
-                                 <span class="summary-icon text-base">▼</span>
-                                 <span>備案 Plan B</span>
-                              </summary>
-                              <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
-                                 山頂若遭遇嚴重白茫茫大霧 (Whiteout)，切勿購買高價登頂票，改至低海拔的瀑布鎮 (Lauterbrunnen) 或布里恩茨湖遊船。
-                              </div>
-                           </details>
-                        </div>
-                     </details>
-                  </article>
-                  <!-- DAY 8 -->
-                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300 transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800"
-                     id="day-08">
-                     <details class="day-details">
-                        <summary class="day-summary">
-                           <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-100">
-                              <div class="flex items-center gap-3">
-                                 <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 08</span>
-                                 <span class="text-xs font-bold text-slate-500">9/30 (四)</span>
-                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：格林德瓦</span>
-                              </div>
-                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">Gelmerbahn 纜車 + Gelmersee 藍湖</h3>
-                           </div>
-                           <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
-                        </summary>
-                        <div class="day-content">
-                            <div class="transport-card">
-                               <div class="transport-title">🚆 今日交通</div>
-                               <div class="transport-list">
-                                  <div class="transport-leg">
-                                     <div><div class="transport-place">Grindelwald</div><div class="transport-sub">早晨出發</div>
-                                     </div><div class="transport-arrow">→</div>
-                                     <div><div class="transport-place">Handegg</div><div class="transport-sub">經 Meiringen / Innertkirchen</div></div></div>
-                                  <div class="transport-leg">
-                                     <div><div class="transport-place">Handegg</div><div class="transport-sub">Gelmerbahn valley station</div>
-                                     </div><div class="transport-arrow">→</div>
-                                     <div><div class="transport-place">Gelmersee</div><div class="transport-sub">預約時段待確認</div></div></div>
-                               </div>
-                               <div class="transport-note">⚠️ 9/30 接近季末，2027 Gelmerbahn 營運日期與預約時段需優先確認。</div>
-                            </div>
-                           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
-                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
-                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌅 上午</strong>
-                                 <p class="text-slate-600 leading-relaxed">
-                                    早起搭乘公車/火車經 Meiringen / Innertkirchen 前往 Handegg 纜車站。
-                                 </p>
-                              </div>
-                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
-                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">☀️ 下午</strong>
-                                 <p class="text-slate-600 leading-relaxed">
-                                    搭乘坡度高達 106% 的敞篷纜車前往 抵達 Gelmersee 後依天候、步道狀況與體力，安排湖畔散步或部分環湖健行。
-                                 </p>
-                              </div>
-                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
-                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌙 晚上</strong>
-                                 <p class="text-slate-600 leading-relaxed">
-                                    返回格林德瓦，整理大件行李準備明日前往策馬特。
-                                 </p>
-                              </div>
-                           </div>
-                           <div class="day-links">
-                              <div class="day-links-grid">
-                                 <a class="day-link guide-jump"
-                                    href="#guide-gelmer"
-                                    >ℹ️ 景點指南 | Gelmerbahn</a>
-                              </div>
-                           </div>
-                           <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
-                              <summary class="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-slate-700 transition">
-                                 <span class="summary-icon text-base">▼</span>
-                                 <span>備案 Plan B</span>
-                              </summary>
-                              <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
-                                 本日為最受天候影響之天。若 Gelmerbahn 營運或天氣不佳，此日即作為 First 或少女峰的預備雨天救援日。
-                              </div>
-                           </details>
-                        </div>
-                     </details>
-                  </article>
-                  <!-- DAY 9 -->
-                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300 transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800"
-                     id="day-09">
-                     <details class="day-details">
-                        <summary class="day-summary">
-                           <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-100">
-                              <div class="flex items-center gap-3">
-                                 <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 09</span>
-                                 <span class="text-xs font-bold text-slate-500">10/01 (五)</span>
-                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：策馬特</span>
-                              </div>
-                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">策馬特 + 馬特洪峰</h3>
-                           </div>
-                           <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
-                        </summary>
-                        <div class="day-content">
-                            <div class="transport-card">
-                               <div class="transport-title">🚆 今日交通</div>
-                               <div class="transport-list">
-                                  <div class="transport-leg">
-                                     <div><div class="transport-place">Grindelwald</div><div class="transport-sub">退房後出發</div>
-                                     </div><div class="transport-arrow">→</div>
-                                     <div><div class="transport-place">Zermatt</div><div class="transport-sub">實際轉乘與班次待確認</div></div></div>
-                               </div>
-                               <div class="transport-note">🕒 2027 SBB 時刻表公布後補上轉乘站、月台與預計抵達時間。</div>
                               <div class="day-links-grid mt-3">
                                  <a class="day-link ticket-link"
                                     href="https://www.sbb.ch/en"
                                     rel="noopener noreferrer" target="_blank"
                                     >🚆 SBB 官方時刻 / 訂票</a>
                               </div>
-                            </div>
+                           </div>
                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
-                              <div lass="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌅 上午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    清晨離開格林德瓦，搭車前往無車環保山城策馬特，飯店先寄放行李。
+                                    退房後前往 Interlaken，寄放行李；滑翔翼預約不要壓得太緊，留天候與報到緩衝。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">☀️ 下午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    若能見度佳，直衝 Gornergrat 觀景台看倒影；若雲霧較多則在鎮上逛街等待雲霧散去。
+                                    重點活動：Interlaken Paragliding。結束後逛 Höhematte、Interlaken 市區並吃午餐。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌙 晚上</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    策馬特鎮上小木屋特色餐廳晚餐，欣賞馬特洪峰夕照黃金角。
+                                    搭乘黃金列車全景路線 (Luzern–Interlaken Express)，沿途欣賞湖光山色。
                                  </p>
-                              </div>
-                           </div>
-                           <div class="day-links">
-                              <div class="day-links-grid">
-                                 <a class="day-link guide-jump"
-                                    href="#guide-gornergrat"
-                                    >ℹ️ 景點指南 | Gornergrat</a>
                               </div>
                            </div>
                            <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
@@ -1224,63 +1051,260 @@
                                  <span>備案 Plan B</span>
                               </summary>
                               <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
-                                 策馬特僅停留 1 晚容錯率低，只要看到山峰露出頭，優先將 Gornergrat 齒軌列車或冰川天堂登頂排在第一順位。
+                                 滑翔翼受天候影響很大；若取消，改成 Interlaken 市區／湖區，並依業者可用時段處理改期。
+                              </div>
+                           </details>
+                        </div>
+                     </details>
+                  </article>
+                  <!-- DAY 7 -->
+                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300
+                     transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800" id="day-07">
+                     <details class="day-details">
+                        <summary class="day-summary">
+                           <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-100">
+                              <div class="flex items-center gap-3">
+                                 <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 07</span>
+                                 <span class="text-xs font-bold text-slate-500">9/29 (三)</span>
+                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：琉森</span>
+                              </div>
+                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">皮拉圖斯山 + Fräkigaudi 夏日雪橇</h3>
+                           </div>
+                           <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
+                        </summary>
+                        <div class="day-content">
+                           <div class="transport-card">
+                              <div class="transport-title">🚆 今日交通</div>
+                              <div class="transport-list">
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Luzern</div><div class="transport-sub">市區出發</div>
+                                     </div><div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Fräkmüntegg / Pilatus Kulm</div><div class="transport-sub">Kriens 上山</div></div></div>
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Pilatus Kulm</div><div class="transport-sub">山頂</div></div>
+                                    <div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Alpnachstad / Luzern</div><div class="transport-sub">齒軌鐵路下山後返回琉森</div></div></div></div>
+                              <div class="transport-note">🕒️ 纜車、齒軌鐵路與 Fräkigaudi 2027 秋季營運時間待官方公布。</div>
+                           </div>
+                           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
+                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌅 上午</strong>
+                                 <p class="text-slate-600 leading-relaxed">
+                                    早起經 Kriens 前往 Fräkmüntegg，優先排隊體驗 Fräkigaudi 夏日雪橇（避開午後人潮）。<br>
+                                    Golden Round Trip｜渡輪＋登山列車：搭渡輪前往 ALPNACHSTAD 碼頭，下船後前往 PILATUS BAHN 搭乘 48 度傾斜齒輪登山列車<br>
+                                    Silver Round Trip｜火車＋登山列車：搭乘火車 S5 於 ALPNACHSTAD 車站下車，出站後搭乘48度傾斜齒輪登山列車
+                                 </p>
+                              </div>
+                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">☀️ 下午</strong>
+                                 <p class="text-slate-600 leading-relaxed">
+                                    登頂皮拉圖斯山 (Pilatus Kulm) 飽覽群山全景，隨後搭乘世界最陡齒軌鐵道下山。
+                                 </p>
+                              </div>
+                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌙 晚上</strong>
+                                 <p class="text-slate-600 leading-relaxed">
+                                    返回琉森舊城區，安排輕鬆優雅的瑞士起司鍋 (Fondue) 晚宴。
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="day-links">
+                              <div class="day-links-grid">
+                                 <a class="day-link guide-jump"
+                                    href="#guide-pilatus"
+                                    >ℹ️ 景點指南 | Pilatus</a>
+                                 <a class="day-link guide-jump"
+                                    href="#guide-fraekigaudi"
+                                    >ℹ️ 景點指南 | Fräkigaudi</a>
+                              </div>
+                           </div>
+                           <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
+                              <summary class="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-slate-700 transition">
+                                 <span class="summary-icon text-base">▼</span>
+                                 <span>備案 Plan B</span>
+                              </summary>
+                              <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
+                                 9/29 、 9/30 選天氣好的那天去皮拉圖斯山。
+                              </div>
+                           </details>
+                        </div>
+                     </details>
+                  </article>
+                  <!-- DAY 8 -->
+                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300
+                     transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800" id="day-08">
+                     <details class="day-details">
+                        <summary class="day-summary">
+                           <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-100">
+                              <div class="flex items-center gap-3">
+                                 <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 08</span>
+                                 <span class="text-xs font-bold text-slate-500">9/30 (四)</span>
+                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：琉森</span>
+                              </div>
+                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">琉森市區 + 機動日</h3>
+                           </div>
+                           <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
+                        </summary>
+                        <div class="day-content">
+                           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
+                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌅 上午</strong>
+                                 <p class="text-slate-600 leading-relaxed">
+                                    Luzern 可安排舊城、Kapellbrücke、Lion Monument、Museggmauer、湖區或遊船，節奏放慢。
+                                 </p>
+                              </div>
+                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">☀️ 下午</strong>
+                                 <p class="text-slate-600 leading-relaxed">
+                                    琉森市區
+                                 </p>
+                              </div>
+                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌙 晚上</strong>
+                                 <p class="text-slate-600 leading-relaxed">
+                                    琉森市區
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="day-links">
+                              <div class="day-links-grid">
+                                 <a class="day-link guide-jump"
+                                    href="#guide-luzern"
+                                    >ℹ️ 景點指南 | Luzern</a>
+                              </div>
+                           </div>
+                           <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
+                              <summary class="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-slate-700 transition">
+                                 <span class="summary-icon text-base">▼</span>
+                                 <span>備案 Plan B</span>
+                              </summary>
+                              <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
+                                 9/29、9/30 兩天互為天氣備案
+                              </div>
+                           </details>
+                        </div>
+                     </details>
+                  </article>
+                  <!-- DAY 9 -->
+                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300
+                     transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800" id="day-09">
+                     <details class="day-details">
+                        <summary class="day-summary">
+                           <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-100">
+                              <div class="flex items-center gap-3">
+                                 <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 09</span>
+                                 <span class="text-xs font-bold text-slate-500">10/01 (五)</span>
+                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：慕尼黑</span>
+                              </div>
+                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">琉森 → 蘇黎世 → 慕尼黑</h3>
+                           </div>
+                           <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
+                        </summary>
+                        <div class="day-content">
+                           <div class="transport-card">
+                              <div class="transport-title">🚆 今日交通</div>
+                              <div class="transport-list">
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Luzern</div><div class="transport-sub">xx:xx</div>
+                                    </div><div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Zurich HB</div><div class="transport-sub">xx:xx</div></div>
+                                 </div>
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Zurich HB</div><div class="transport-sub">xx:xx</div>
+                                    </div><div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Munich Hbf</div><div class="transport-sub">xx:xx</div></div>
+                                 </div>
+                              </div>
+                              <div class="day-links-grid mt-3">
+                                 <a class="day-link ticket-link"
+                                    href="https://www.sbb.ch/en"
+                                    rel="noopener noreferrer" target="_blank"
+                                    >🚆 SBB 官方時刻 / 訂票</a>
+                              </div>
+                           </div>
+                           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
+                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌅 上午</strong>
+                                 <p class="text-slate-600 leading-relaxed">
+                                    前往蘇黎世，寄放行李於蘇黎世中央車站。
+                                 </p>
+                              </div>
+                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">☀️ 下午</strong>
+                                 <p class="text-slate-600 leading-relaxed">
+                                    3–4 小時蘇黎世精華：班霍夫大街、林登霍夫山丘俯瞰舊城、蘇黎世湖畔。
+                                 </p>
+                              </div>
+                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
+                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌙 晚上</strong>
+                                 <p class="text-slate-600 leading-relaxed">
+                                    搭乘跨國列車由慕尼黑前往蘇黎世。
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="day-links">
+                              <div class="day-links-grid">
+                                 <a class="day-link guide-jump"
+                                    href="#guide-zurich"
+                                    >ℹ️ 景點指南 | Zurich</a>
+                              </div>
+                           </div>
+                           <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
+                              <summary class="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-slate-700 transition">
+                                 <span class="summary-icon text-base">▼</span>
+                                 <span>備案 Plan B</span>
+                              </summary>
+                              <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
+                                 若跨國班次誤點，取消蘇黎世快閃，直接轉乘至蘇黎世。
                               </div>
                            </details>
                         </div>
                      </details>
                   </article>
                   <!-- DAY 10 -->
-                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300 transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800"
-                     id="day-10">
+                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300
+                     transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800" id="day-10">
                      <details class="day-details">
                         <summary class="day-summary">
                            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-100">
                               <div class="flex items-center gap-3">
                                  <span class="px-3 py-1 rounded-md bg-emerald-900 text-white text-xs font-black tracking-wide">DAY 10</span>
                                  <span class="text-xs font-bold text-slate-500">10/02 (六)</span>
-                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：聖莫里茲</span>
+                                 <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">住宿：慕尼黑</span>
                               </div>
-                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">冰河列車</h3>
+                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">慕尼黑啤酒節</h3>
                            </div>
                            <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
                         </summary>
                         <div class="day-content">
-                            <div class="transport-card">
-                               <div class="transport-title">🚆 今日交通｜Glacier Express</div>
-                               <div class="transport-list">
-                                  <div class="transport-leg">
-                                     <div><div class="transport-place">Zermatt</div><div class="transport-sub">Glacier Express 出發</div>
-                                     </div><div class="transport-arrow">→</div>
-                                     <div><div class="transport-place">St. Moritz</div><div class="transport-sub">全日景觀列車</div></div></div>
-                               </div>
-                               <div class="transport-note">🎟️ 10/02/2027 班次、座位預約與餐飲方案待官方 2027 時刻表公布後確認。</div>
-                            </div>
                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌅 上午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    於策馬特車站搭乘預約好的冰河列車 (Glacier Express) 全景觀光車廂。
+                                    早餐後前往 Theresienwiese 特蕾西婭草坪體驗德國啤酒節。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">☀️ 下午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    全天享受世界最慢快車縱貫阿爾卑斯山脈，穿越無數拱橋、峽谷與雪山絕景，享用車上套餐。
+                                    逛遊樂設施和攤位，也可去啤酒花園、小帳篷或老啤酒節。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌙 晚上</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    抵達恩加丁谷地的名流渡假勝地聖莫里茲 (St. Moritz) 入住飯店。
+                                    依體力決定待到多晚，回飯店休息並整理隔天行李。
                                  </p>
                               </div>
                            </div>
                            <div class="day-links">
                               <div class="day-links-grid">
                                  <a class="day-link guide-jump"
-                                    href="#guide-glacier"
-                                    >ℹ️ 景點指南 | Glacier Express</a>
+                                    href="#guide-oktoberfest"
+                                    >ℹ️ 景點指南 | Oktoberfest</a>
+                                 <a class="day-link guide-jump"
+                                    href="#guide-munich"
+                                    >ℹ️ 景點指南 | Munich</a>
                               </div>
                            </div>
                            <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
@@ -1289,15 +1313,15 @@
                                  <span>備案 Plan B</span>
                               </summary>
                               <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
-                                 需提前確認 2027 秋季維護保養時程，若冰河列車班次調整，可利用瑞士國鐵 (SBB) 普通車分段連貫，景色同樣絕美。
+                                 若中午後才會抵達啤酒節會場，改去舊城區及酒吧。
                               </div>
                            </details>
                         </div>
                      </details>
                   </article>
                   <!-- DAY 11 -->
-                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300 transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800"
-                     id="day-11">
+                  <article class="day-row bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:border-slate-300
+                     transition-all p-5 sm:p-6 border-l-4 border-l-emerald-800" id="day-11">
                      <details class="day-details">
                         <summary class="day-summary">
                            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 pb-4 border-b border-slate-100">
@@ -1306,66 +1330,49 @@
                                  <span class="text-xs font-bold text-slate-500">10/03 (日)</span>
                                  <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-900 text-[11px] font-bold border border-emerald-300">返家</span>
                               </div>
-                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">聖莫里茲 → 機場</h3>
+                              <h3 class="text-lg sm:text-xl font-bold text-slate-900">慕尼黑 → 機場</h3>
                            </div>
                            <span aria-hidden="true" class="day-chevron summary-icon">▼</span>
                         </summary>
                         <div class="day-content">
-                            <div class="transport-card">
-                               <div class="transport-title">🚆 今日交通</div>
-                               <div class="transport-list">
-                                  <div class="transport-leg">
-                                     <div><div class="transport-place">St. Moritz</div><div class="transport-sub">早晨出發</div>
-                                     </div><div class="transport-arrow">→</div>
-                                     <div><div class="transport-place">Zürich Flughafen (ZRH)</div><div class="transport-sub">班次待確認</div></div></div>
-                                  <div class="transport-leg">
-                                     <div><div class="transport-place">Zürich (ZRH)</div><div class="transport-sub">預留轉乘與登機時間</div>
-                                     </div><div class="transport-arrow">→</div>
-                                     <div><div class="transport-place">Amsterdam (AMS)</div><div class="transport-sub">航班待預訂</div></div></div>
-                               </div>
-                               <div class="transport-note">⏱️ 訂回程航班時需保留 St. Moritz → ZRH 的鐵路延誤緩衝。</div>
-                              <div class="day-links-grid mt-3">
-                                 <a class="day-link ticket-link"
-                                    href="https://www.sbb.ch/en"
-                                    rel="noopener noreferrer" target="_blank"
-                                    >🚆 SBB 官方時刻 / 訂票</a>
+                           <div class="transport-card">
+                              <div class="transport-title">🚆 今日交通</div>
+                              <div class="transport-list">
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Munich</div><div class="transport-sub">xx:xx</div>
+                                    </div><div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">MUC Airport</div><div class="transport-sub">xx:xx</div></div>
+                                 </div>
+                                 <div class="transport-sub mb-2">Lufthansa LH2311</div>
+                                 <div class="transport-leg">
+                                    <div><div class="transport-place">Munich (MUC)</div><div class="transport-sub">xx:xx</div>
+                                    </div><div class="transport-arrow">→</div>
+                                    <div><div class="transport-place">Amsterdam (AMS)</div><div class="transport-sub">xx:xx</div></div>
+                                 </div>
                               </div>
-                            </div>
+                           </div>
                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 text-xs sm:text-sm">
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌅 上午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    早起搭乘景觀火車由聖莫里茲返回蘇黎世，直達蘇黎世國際機場 (ZRH)。
+                                    退房、整理行李、確認護照與登機資料。
                                  </p>
                               </div>
                               <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
                                  <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">☀️ 下午</strong>
                                  <p class="text-slate-600 leading-relaxed">
-                                    預留充足陸空轉乘緩衝時間，辦理退稅與登機手續，搭機飛往阿姆斯特丹。
-                                 </p>
-                              </div>
-                              <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100">
-                                 <strong class="text-slate-900 font-bold block mb-1 text-xs uppercase tracking-wider text-emerald-800">🌙 晚上</strong>
-                                 <p class="text-slate-600 leading-relaxed">
-                                    順利返抵溫暖的家，結束充滿阿爾卑斯名峰與啤酒節狂歡的精彩旅程。
+                                    依航班時間前往 Munich Airport；預留長程國際航班所需時間。
                                  </p>
                               </div>
                            </div>
-                           <details class="plan-b-details mt-4 pt-3 border-t border-dashed border-slate-200">
-                              <summary class="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-slate-700 transition">
-                                 <span class="summary-icon text-base">▼</span>
-                                 <span>備案 Plan B</span>
-                              </summary>
-                              <div class="mt-2.5 p-3.5 rounded-xl bg-amber-50/70 border border-amber-200/70 text-xs sm:text-sm text-amber-950">
-                                 若蘇黎世班機時間不佳，亦可評估由聖莫里茲搭車前往米蘭 (MXP) 機場作為離境備案。
-                              </div>
-                           </details>
                         </div>
                      </details>
                   </article>
                </div>
             </div>
          </details>
+
+         <!-- Attraction Guide -->
          <details class="major-section scroll-mt-24" id="attraction-guide">
             <summary class="major-summary">
                <span class="major-summary-title"><span>🏔️</span>景點指南</span>
@@ -1373,13 +1380,384 @@
             </summary>
             <div class="major-content">
                <div class="guide-grid">
+                  <article class="guide-card" id="guide-zermatt">
+                     <img alt="Zermatt 市區景點" class="guide-image" decoding="async" loading="lazy" src="images/zermatt.jpg"/>
+                     <div class="guide-card-head">
+                        <div class="text-2xl mb-2">🏙️</div>
+                        <div class="flex items-center justify-between gap-3">
+                           <h3 class="font-black text-slate-900">Zermatt</h3>
+                           <span class="text-[11px] font-bold text-emerald-800">Day 01</span>
+                        </div>
+                        <ul class="mt-3 list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed marker:text-slate-400">
+                           <li>地鐵票xxxx</li>
+                        </ul>
+                     </div>
+                     <div class="p-4">
+                        <div class="guide-meta">
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 蘇黎世大教堂 Karlstor</strong>免費參觀<br>
+                              <a href="https://maps.app.goo.gl/GgXVB14TzRN8LDRj7"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 伯恩大教堂 Karlstor</strong>比較值得登頂參觀<br>
+                              <a href="https://maps.app.goo.gl/GgXVB14TzRN8LDRj7"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                        </div>
+                        <div class="day-links-grid mt-3">
+                           <a class="day-link ticket-link"
+                              href="https://lilianyolo.wordpress.com/2025/04/06/%e7%91%9e%e5%a3%ab-8%e6%97%a5%e8%87%aa%e7%94%b1%e8%a1%8c%ef%bd%9c%e8%98%87%e9%bb%8e%e4%b8%96%e6%99%af%e9%bb%9e-%e8%b6%85%e5%80%bc%e4%bd%8f%e5%ae%bf%e6%8e%a8%e8%96%a6%ef%bc%88%e5%a4%a9%e9%b5%9d/"
+                              rel="noopener noreferrer" target="_blank"
+                              >🔗 策馬特攻略</a>
+                           <a class="day-link guide-jump return-day-link"
+                              href="#day-01"
+                              >📅 回到 Day 01 行程</a>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="guide-card" id="guide-gornergrat">
+                     <img alt="Gornergrat Railway 與 Matterhorn" class="guide-image" decoding="async" loading="lazy" src="images/gornergrat-matterhorn.jpg"/>
+                     <div class="guide-card-head">
+                        <div class="text-2xl mb-2">🏔️</div>
+                        <div class="flex items-center justify-between gap-3">
+                           <h3 class="font-black text-slate-900">Gornergrat + Matterhorn</h3>
+                           <span class="text-[11px] font-bold text-emerald-800">Day 02</span>
+                        </div>
+                        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+                           策馬特最經典的馬特洪峰觀景路線之一。若抵達當天能見度佳，行程已安排把 Gornergrat 放在優先順位。
+                        </p>
+                     </div>
+                     <div class="p-4">
+                        <div class="guide-meta">
+                           <div class="guide-meta-item"><strong class="block text-slate-800">🕒 2027 時間</strong>待官方列車時刻公布</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">🎟️ 票價</strong>待 2027 官方票價公布</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">⏱️ 建議停留</strong>3–5 小時</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">☀️ 策略</strong>能見度佳就優先上山</div>
+                        </div>
+                        <div class="day-links-grid mt-3">
+                           <a class="day-link map-link"
+                              href="https://www.google.com/maps/search/?api=1&amp;query=Gornergrat"
+                              rel="noopener noreferrer" target="_blank"
+                              >📍 Google Maps</a>
+                           <a class="day-link ticket-link"
+                              href="https://www.gornergrat.ch/en/"
+                              rel="noopener noreferrer" target="_blank"
+                              >🔗 官方網站</a>
+                           <a class="day-link ticket-link"
+                              href="https://www.gornergrat.ch/en/products/ticket"
+                              rel="noopener noreferrer" target="_blank"
+                              >🎟️ 官方票券</a>
+                           <a class="day-link guide-jump return-day-link"
+                              href="#day-02"
+                              >📅 回到 Day 02 行程</a>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="guide-card" id="guide-glacier">
+                     <img alt="Glacier Express 行經 Landwasser Viaduct" class="guide-image" decoding="async" loading="lazy" src="images/glacier-express.jpg"/>
+                     <div class="guide-card-head">
+                        <div class="text-2xl mb-2">🚂</div>
+                        <div class="flex items-center justify-between gap-3">
+                           <h3 class="font-black text-slate-900">Glacier Express</h3>
+                           <span class="text-[11px] font-bold text-emerald-800">Day 03</span>
+                        </div>
+                        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+                           由策馬特前往聖莫里茲的長程景觀列車，是本趟最需要提前確認營運日期與座位預約的交通體驗。
+                        </p>
+                     </div>
+                     <div class="p-4">
+                        <div class="guide-meta">
+                           <div class="guide-meta-item"><strong class="block text-slate-800">🕒 2027 時刻</strong>待官方時刻表公布</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">🎟️ 預約</strong>車票與座位 reservation 分開確認</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">⏱️ 行程</strong>幾乎全天列車體驗</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">📅 目前規劃</strong>2027/10/02</div>
+                        </div>
+                        <div class="day-links-grid mt-3">
+                           <a class="day-link map-link"
+                              href="https://www.google.com/maps/search/?api=1&amp;query=Glacier+Express+Zermatt"
+                              rel="noopener noreferrer" target="_blank"
+                              >📍 Google Maps</a>
+                           <a class="day-link ticket-link"
+                              href="https://www.glacierexpress.ch/en/"
+                              rel="noopener noreferrer" target="_blank"
+                              >🔗 官方網站</a>
+                           <a class="day-link ticket-link"
+                              href="https://www.glacierexpress.ch/en/book-now"
+                              rel="noopener noreferrer" target="_blank"
+                              >🎟️ 官方訂票</a>
+                           <a class="day-link guide-jump return-day-link"
+                              href="#day-03"
+                              >📅 回到 Day 03 行程</a>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="guide-card" id="guide-jungfrau">
+                     <img alt="Jungfraujoch 阿萊奇冰河景觀" class="guide-image" decoding="async" loading="lazy" src="images/jungfraujoch.jpg"/>
+                     <div class="guide-card-head">
+                        <div class="text-2xl mb-2">❄️</div>
+                        <div class="flex items-center justify-between gap-3">
+                           <h3 class="font-black text-slate-900">Jungfraujoch</h3>
+                           <span class="text-[11px] font-bold text-emerald-800">Day 04</span>
+                        </div>
+                        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+                           經 Eigergletscher 前往少女峰區高海拔景點，主要看 Sphinx、Ice Palace 與 Aletsch Glacier；能見度是體驗關鍵。
+                        </p>
+                     </div>
+                     <div class="p-4">
+                        <div class="guide-meta">
+                           <div class="guide-meta-item"><strong class="block text-slate-800">🕒 2027 時間</strong>待官方班次公布</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">🎟️ 票價</strong>高價景點；出發前再確認</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">⏱️ 建議停留</strong>半天～全天</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">☀️ 策略</strong>先看 Livecam 再決定登頂</div>
+                        </div>
+                        <div class="day-links-grid mt-3">
+                           <a class="day-link map-link"
+                              href="https://www.google.com/maps/search/?api=1&amp;query=Jungfraujoch"
+                              rel="noopener noreferrer" target="_blank"
+                              >📍 Google Maps</a>
+                           <a class="day-link ticket-link"
+                              href="https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/"
+                              rel="noopener noreferrer" target="_blank"
+                              >🔗 官方網站</a>
+                           <a class="day-link ticket-link"
+                              href="https://www.jungfrau.ch/en-gb/prices-and-tickets/"
+                              rel="noopener noreferrer" target="_blank"
+                              >🎟️ 官方票券</a>
+                           <a class="day-link guide-jump return-day-link"
+                              href="#day-04"
+                              >📅 回到 Day 04 行程</a>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="guide-card" id="guide-first">
+                     <img alt="Grindelwald First 與 Bachalpsee 高山景觀" class="guide-image" decoding="async" loading="lazy" src="images/grindelwald-first.jpg"/>
+                     <div class="guide-card-head">
+                        <div class="text-2xl mb-2">🏎️</div>
+                        <div class="flex items-center justify-between gap-3">
+                           <h3 class="font-black text-slate-900">Grindelwald First</h3>
+                           <span class="text-[11px] font-bold text-emerald-800">Day 05</span>
+                        </div>
+                        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
+                           格林德瓦的活動型高山日：First Cliff Walk、Bachalpsee，以及你們最想玩的 Mountain Cart。
+                        </p>
+                     </div>
+                     <div class="p-4">
+                        <div class="guide-meta">
+                           <div class="guide-meta-item"><strong class="block text-slate-800">🕒 2027 時間</strong>待秋季纜車時刻公布</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">🎟️ 票價</strong>纜車與活動票價待確認</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">⏱️ 建議停留</strong>全天</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">☀️ 建議路線</strong>早班上山，活動優先</div>
+                        </div>
+                        <div class="day-links-grid mt-3">
+                           <a class="day-link map-link"
+                              href="https://www.google.com/maps/search/?api=1&amp;query=Grindelwald+First"
+                              rel="noopener noreferrer" target="_blank"
+                              >📍 Google Maps</a>
+                           <a class="day-link ticket-link"
+                              href="https://www.jungfrau.ch/en-gb/grindelwaldfirst/"
+                              rel="noopener noreferrer" target="_blank"
+                              >🔗 官方網站</a>
+                           <a class="day-link ticket-link"
+                              href="https://www.jungfrau.ch/en-gb/prices-and-tickets/"
+                              rel="noopener noreferrer" target="_blank"
+                              >🎟️ 官方票券</a>
+                           <a class="day-link ticket-link"
+                              href="https://www.jungfrau.ch/en-gb/grindelwaldfirst/first-mountain-cart/"
+                              rel="noopener noreferrer" target="_blank"
+                              >🏎️ Mountain Cart 官方資訊</a>
+                           <a class="day-link guide-jump return-day-link"
+                              href="#day-05"
+                              >📅 回到 Day 05 行程</a>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="guide-card" id="guide-pilatus">
+                     <img alt="Pilatus 皮拉圖斯山" class="guide-image" decoding="async" loading="lazy" src="images/pilatus.jpg"/>
+                     <div class="guide-card-head">
+                        <div class="text-2xl mb-2">🏔️</div>
+                        <div class="flex items-center justify-between gap-3">
+                           <h3 class="font-black text-slate-900">Pilatus 皮拉圖斯山</h3>
+                           <span class="text-[11px] font-bold text-sky-800">Day 07</span>
+                        </div>
+                        <ul class="mt-3 list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed marker:text-slate-400">
+                           <li>上山後建議花錢先預約齒軌列車，搭乘時間抓抵達這區後的 4.5～5 小時後</li>
+                           <li>山頂遊覽區域有三個重點觀景區域：Tomlishorn、Drachenweg & Oberhaupt、Esel</li>
+                           <li>建議先去 Esel，Tomlishorn 是由西往東拍、下午光線比較好，但要注意回到遊覽區域的時間，避免錯過齒軌列車的班次</li>
+                           <li>Panorama Terrance 是拍齒軌列車的好位置</li>
+                           <li>山頂遊覽區域有三個重點觀景區域：Tomlishorn、Drachenweg & Oberhaupt、Esel</li>
+                           <li>Esel 是皮拉圖斯山的必去景點，步道入口在 Hotel Bellevue 附近，全程上坡約 15～20 分鐘就可以登頂，跟 Tomlishorn 比起來可以看到更完整的湖區</li>
+                           <li>Tomlishorn 的觀景台有 360 度的全景視野，建議待個 20 分鐘左右即可</li>
+                           <li>Oberhauptg 是這區域三個瞭望點中最親民的一個，難度最小遊客也最多</li>
+                        </ul>
+                     </div>
+                     <div class="p-4">
+                        <div class="guide-meta">
+                           <div class="guide-meta-item"><strong class="block text-slate-800">🕒 2027 時間</strong>4/1～10/18<br>
+                              Kriens - Fräkmüntegg ： 08:30～17:00<br>
+                              Fräkmüntegg - Pilatus Kulm ： 09:00～17:30</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">🎟️ 票價</strong>Golden Round Trip ： 119.8 瑞士法郎<br>
+                              Silver Round Trip ： 94.2 瑞士法郎
+                           </div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">⏱️ 建議停留</strong>大半天～全天</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">⚠️ 注意</strong>先確認天氣預報及營運狀況，確定要去再買票</div>
+                           <div class="guide-meta-item col-span-2"><strong class="block text-slate-800">☀️ 建議路線</strong>
+                              <ul class="list-disc pl-5 mt-1.5 space-y-1">
+                                 <li>琉森 – Kriens ：在火車站搭乘 Bus 1（約 12 分鐘），於 Kriens, Pilatus–Bahnen 下車</li>
+                                 <li>Kriens – Fräkmüntegg ： 08:30左右搭乘全景纜車（約 25 分鐘），於 Fräkmüntegg 下車</li>
+                                 <li>Fräkmüntegg ：花 1～1.5 小時玩夏日雪橇，再轉搭 Aerial Cableway《Dragon Ride》（約 5 分鐘）到山頂遊覽區</li>
+                                 <li>山頂遊覽區：建議停留時間 4.5～5.5 小時</li>
+                                 <li>山頂遊覽區 – Alpnachstad ：搭乘齒軌列車（約 30～40 分鐘）</li>
+                                 <li>Alpnachstad – 琉森：琉森湖遊船（約 1 小時）</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="day-links-grid mt-3">
+                           <a class="day-link map-link"
+                              href="https://maps.app.goo.gl/PKR6yPs3XJBMnMq78"
+                              rel="noopener noreferrer" target="_blank"
+                              >📍 Google Maps</a>
+                           <a class="day-link ticket-link"
+                              href="https://pilatus.ch/en"
+                              rel="noopener noreferrer" target="_blank"
+                              >🔗 官網</a>
+                           <a class="day-link ticket-link"
+                              href="https://www.leo-travel.idv.tw/59595/swiss-luzern-pilatus-golden-round-trip#%E7%9A%AE%E6%8B%89%E5%9C%96%E6%96%AF%E5%B1%B1%EF%BC%8D-frakmuntegg"
+                              rel="noopener noreferrer" target="_blank"
+                              >🔗 皮拉圖斯山攻略</a>
+                           <a class="day-link guide-jump return-day-link"
+                              href="#day-07"
+                              >📅 回到 Day 07 行程</a>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="guide-card" id="guide-fraekigaudi">
+                     <img alt="Fräkigaudi 夏日雪橇" class="guide-image" decoding="async" loading="lazy" src="images/fraekigaudi.jpg"/>
+                     <div class="guide-card-head">
+                        <div class="text-2xl mb-2">🛷</div>
+                        <div class="flex items-center justify-between gap-3">
+                           <h3 class="font-black text-slate-900">Fräkigaudi 夏日雪橇</h3>
+                           <span class="text-[11px] font-bold text-sky-800">Day 07</span>
+                        </div>
+                        <ul class="mt-3 list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed marker:text-slate-400">
+                           <li>是瑞士最長的夏日雪橇之一，全長約 1350 公尺，是來瑞士絕對不能錯過項目！</li>
+                           <li>由纜車站走到售票處約 8 分鐘，先在自動售票機購票（僅可由信用卡付款）再排隊入場</li>
+                           <li>全程禁止攜帶包包、手持手機或相機等，有免費置物櫃，也可租借綁在胸前的固定器</li>
+                        </ul>
+                     </div>
+                     <div class="p-4">
+                        <div class="guide-meta">
+                           <div class="guide-meta-item"><strong class="block text-slate-800">🕒 2027 時間</strong>4/1～10/18 10:00～16:00</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">🎟️ 票價</strong>9 瑞士法郎/次</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">⏱️ 建議停留</strong>1.5 小時</div>
+                           <div class="guide-meta-item"><strong class="block text-slate-800">☔ 注意</strong>受天氣影響大，可於官網先確認營運狀況</div>
+                        </div>
+                        <div class="day-links-grid mt-3">
+                           <a class="day-link map-link"
+                              href="https://maps.app.goo.gl/WTQN7XWV3AAkqrk88"
+                              rel="noopener noreferrer" target="_blank"
+                              >📍 Google Maps</a>
+                           <a class="day-link ticket-link"
+                              href="https://www.rodelbahn.ch/en/"
+                              rel="noopener noreferrer" target="_blank"
+                              >🔗 官網</a>
+                           <a class="day-link guide-jump return-day-link"
+                              href="#day-07"
+                              >📅 回到 Day 07 行程</a>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="guide-card" id="guide-luzern">
+                     <img alt="Luzern 市區景點" class="guide-image" decoding="async" loading="lazy" src="images/luzern.jpg"/>
+                     <div class="guide-card-head">
+                        <div class="text-2xl mb-2">🏙️</div>
+                        <div class="flex items-center justify-between gap-3">
+                           <h3 class="font-black text-slate-900">Luzern</h3>
+                           <span class="text-[11px] font-bold text-emerald-800">Day 08</span>
+                        </div>
+                        <ul class="mt-3 list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed marker:text-slate-400">
+                           <li>地鐵票xxxx</li>
+                        </ul>
+                     </div>
+                     <div class="p-4">
+                        <div class="guide-meta">
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 蘇黎世大教堂 Karlstor</strong>免費參觀<br>
+                              <a href="https://maps.app.goo.gl/GgXVB14TzRN8LDRj7"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 伯恩大教堂 Karlstor</strong>比較值得登頂參觀<br>
+                              <a href="https://maps.app.goo.gl/GgXVB14TzRN8LDRj7"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                        </div>
+                        <div class="day-links-grid mt-3">
+                           <a class="day-link ticket-link"
+                              href="https://lilianyolo.wordpress.com/2025/04/06/%e7%91%9e%e5%a3%ab-8%e6%97%a5%e8%87%aa%e7%94%b1%e8%a1%8c%ef%bd%9c%e8%98%87%e9%bb%8e%e4%b8%96%e6%99%af%e9%bb%9e-%e8%b6%85%e5%80%bc%e4%bd%8f%e5%ae%bf%e6%8e%a8%e8%96%a6%ef%bc%88%e5%a4%a9%e9%b5%9d/"
+                              rel="noopener noreferrer" target="_blank"
+                              >🔗 蘇黎世攻略</a>
+                           <a class="day-link guide-jump return-day-link"
+                              href="#day-08"
+                              >📅 回到 Day 08 行程</a>
+                        </div>
+                     </div>
+                  </article>
+                  <article class="guide-card" id="guide-zurich">
+                     <img alt="Zurich 市區景點" class="guide-image" decoding="async" loading="lazy" src="images/zurich.jpg"/>
+                     <div class="guide-card-head">
+                        <div class="text-2xl mb-2">🏙️</div>
+                        <div class="flex items-center justify-between gap-3">
+                           <h3 class="font-black text-slate-900">Zurich</h3>
+                           <span class="text-[11px] font-bold text-emerald-800">Day 09</span>
+                        </div>
+                        <ul class="mt-3 list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed marker:text-slate-400">
+                           <li>地鐵票xxxx</li>
+                        </ul>
+                     </div>
+                     <div class="p-4">
+                        <div class="guide-meta">
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 蘇黎世大教堂 Karlstor</strong>免費參觀<br>
+                              <a href="https://maps.app.goo.gl/GgXVB14TzRN8LDRj7"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                           <div class="guide-meta-item">
+                              <strong class="block text-slate-800">📍 伯恩大教堂 Karlstor</strong>比較值得登頂參觀<br>
+                              <a href="https://maps.app.goo.gl/GgXVB14TzRN8LDRj7"
+                                 target="_blank" rel="noopener noreferrer"
+                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
+                                 Google Maps ↗</a>
+                           </div>
+                        </div>
+                        <div class="day-links-grid mt-3">
+                           <a class="day-link ticket-link"
+                              href="https://lilianyolo.wordpress.com/2025/04/06/%e7%91%9e%e5%a3%ab-8%e6%97%a5%e8%87%aa%e7%94%b1%e8%a1%8c%ef%bd%9c%e8%98%87%e9%bb%8e%e4%b8%96%e6%99%af%e9%bb%9e-%e8%b6%85%e5%80%bc%e4%bd%8f%e5%ae%bf%e6%8e%a8%e8%96%a6%ef%bc%88%e5%a4%a9%e9%b5%9d/"
+                              rel="noopener noreferrer" target="_blank"
+                              >🔗 蘇黎世攻略</a>
+                           <a class="day-link guide-jump return-day-link"
+                              href="#day-09"
+                              >📅 回到 Day 09 行程</a>
+                        </div>
+                     </div>
+                  </article>
                   <article class="guide-card" id="guide-oktoberfest">
                      <img alt="Oktoberfest 慕尼黑啤酒節會場" class="guide-image" decoding="async" loading="lazy" src="images/oktoberfest.jpg"/>
                      <div class="guide-card-head">
                         <div class="text-2xl mb-2">🍺</div>
                         <div class="flex items-center justify-between gap-3">
                            <h3 class="font-black text-slate-900">Oktoberfest</h3>
-                           <span class="text-[11px] font-bold text-emerald-800">Day 01</span>
+                           <span class="text-[11px] font-bold text-emerald-800">Day 10</span>
                         </div>
                         <ul class="mt-3 list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed marker:text-slate-400">
                            <li>慕尼黑啤酒節主會場位於 Theresienwiese，慕尼黑中央車站的西南邊，走路 10 到 15 分鐘</li>
@@ -1420,8 +1798,8 @@
                               rel="noopener noreferrer" target="_blank"
                               >🔗 啤酒節攻略</a>
                            <a class="day-link guide-jump return-day-link"
-                              href="#day-01"
-                              >📅 回到 Day 01 行程</a>
+                              href="#day-10"
+                              >📅 回到 Day 10 行程</a>
                         </div>
                      </div>
                   </article>
@@ -1431,7 +1809,7 @@
                         <div class="text-2xl mb-2">🏰</div>
                         <div class="flex items-center justify-between gap-3">
                            <h3 class="font-black text-slate-900">Munich</h3>
-                           <span class="text-[11px] font-bold text-emerald-800">Day 02</span>
+                           <span class="text-[11px] font-bold text-emerald-800">Day 10</span>
                         </div>
                         <ul class="mt-3 list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed marker:text-slate-400">
                            <li>地鐵日票MVV Münchner Verkehrs- and Tarifverbund Airport-City-Day-Ticket</li>
@@ -1536,223 +1914,8 @@
                               rel="noopener noreferrer" target="_blank"
                               >🔗 慕尼黑攻略</a>
                            <a class="day-link guide-jump return-day-link"
-                              href="#day-02"
-                              >📅 回到 Day 02 行程</a>
-                        </div>
-                     </div>
-                  </article>
-                  <article class="guide-card" id="guide-zurich">
-                     <img alt="Zurich 市區景點" class="guide-image" decoding="async" loading="lazy" src="images/zurich.jpg"/>
-                     <div class="guide-card-head">
-                        <div class="text-2xl mb-2">🏙️</div>
-                        <div class="flex items-center justify-between gap-3">
-                           <h3 class="font-black text-slate-900">Zurich</h3>
-                           <span class="text-[11px] font-bold text-emerald-800">Day 03</span>
-                        </div>
-                        <ul class="mt-3 list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed marker:text-slate-400">
-                           <li>地鐵票xxxx</li>
-                        </ul>
-                     </div>
-                     <div class="p-4">
-                        <div class="guide-meta">
-                           <div class="guide-meta-item">
-                              <strong class="block text-slate-800">📍 蘇黎世大教堂 Karlstor</strong>免費參觀<br>
-                              <a href="https://maps.app.goo.gl/GgXVB14TzRN8LDRj7"
-                                 target="_blank" rel="noopener noreferrer"
-                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
-                                 Google Maps ↗</a>
-                           </div>
-                           <div class="guide-meta-item">
-                              <strong class="block text-slate-800">📍 伯恩大教堂 Karlstor</strong>比較值得登頂參觀<br>
-                              <a href="https://maps.app.goo.gl/GgXVB14TzRN8LDRj7"
-                                 target="_blank" rel="noopener noreferrer"
-                                 class="font-bold text-emerald-800 hover:text-emerald-600 underline underline-offset-2">
-                                 Google Maps ↗</a>
-                           </div>
-                        </div>
-                        <div class="day-links-grid mt-3">
-                           <a class="day-link ticket-link"
-                              href="https://lilianyolo.wordpress.com/2025/04/06/%e7%91%9e%e5%a3%ab-8%e6%97%a5%e8%87%aa%e7%94%b1%e8%a1%8c%ef%bd%9c%e8%98%87%e9%bb%8e%e4%b8%96%e6%99%af%e9%bb%9e-%e8%b6%85%e5%80%bc%e4%bd%8f%e5%ae%bf%e6%8e%a8%e8%96%a6%ef%bc%88%e5%a4%a9%e9%b5%9d/"
-                              rel="noopener noreferrer" target="_blank"
-                              >🔗 蘇黎世攻略</a>
-                           <a class="day-link guide-jump return-day-link"
-                              href="#day-02"
-                              >📅 回到 Day 02 行程</a>
-                        </div>
-                     </div>
-                  </article>
-                  <article class="guide-card" id="guide-pilatus">
-                     <img alt="Pilatus 皮拉圖斯山" class="guide-image" decoding="async" loading="lazy" src="images/pilatus.jpg"/>
-                     <div class="guide-card-head">
-                        <div class="text-2xl mb-2">🏔️</div>
-                        <div class="flex items-center justify-between gap-3">
-                           <h3 class="font-black text-slate-900">Pilatus 皮拉圖斯山</h3>
-                           <span class="text-[11px] font-bold text-sky-800">Day 04</span>
-                        </div>
-                        <ul class="mt-3 list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed marker:text-slate-400">
-                           <li>上山後建議花錢先預約齒軌列車，搭乘時間抓抵達這區後的 4.5～5 小時後</li>
-                           <li>山頂遊覽區域有三個重點觀景區域：Tomlishorn、Drachenweg & Oberhaupt、Esel</li>
-                           <li>建議先去 Esel，Tomlishorn 是由西往東拍、下午光線比較好，但要注意回到遊覽區域的時間，避免錯過齒軌列車的班次</li>
-                           <li>Panorama Terrance 是拍齒軌列車的好位置</li>
-                           <li>山頂遊覽區域有三個重點觀景區域：Tomlishorn、Drachenweg & Oberhaupt、Esel</li>
-                           <li>Esel 是皮拉圖斯山的必去景點，步道入口在 Hotel Bellevue 附近，全程上坡約 15～20 分鐘就可以登頂，跟 Tomlishorn 比起來可以看到更完整的湖區</li>
-                           <li>Tomlishorn 的觀景台有 360 度的全景視野，建議待個 20 分鐘左右即可</li>
-                           <li>Oberhauptg 是這區域三個瞭望點中最親民的一個，難度最小遊客也最多</li>
-                        </ul>
-                     </div>
-                     <div class="p-4">
-                        <div class="guide-meta">
-                           <div class="guide-meta-item"><strong class="block text-slate-800">🕒 2027 時間</strong>4/1～10/18<br>
-                              Kriens - Fräkmüntegg ： 08:30～17:00<br>
-                              Fräkmüntegg - Pilatus Kulm ： 09:00～17:30</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">🎟️ 票價</strong>Golden Round Trip ： 119.8 瑞士法郎<br>
-                              Silver Round Trip ： 94.2 瑞士法郎
-                           </div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">⏱️ 建議停留</strong>大半天～全天</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">⚠️ 注意</strong>先確認天氣預報及營運狀況，確定要去再買票</div>
-                           <div class="guide-meta-item col-span-2"><strong class="block text-slate-800">☀️ 建議路線</strong>
-                              <ul class="list-disc pl-5 mt-1.5 space-y-1">
-                                 <li>琉森 – Kriens ：在火車站搭乘 Bus 1（約 12 分鐘），於 Kriens, Pilatus–Bahnen 下車</li>
-                                 <li>Kriens – Fräkmüntegg ： 08:30左右搭乘全景纜車（約 25 分鐘），於 Fräkmüntegg 下車</li>
-                                 <li>Fräkmüntegg ：花 1～1.5 小時玩夏日雪橇，再轉搭 Aerial Cableway《Dragon Ride》（約 5 分鐘）到山頂遊覽區</li>
-                                 <li>山頂遊覽區：建議停留時間 4.5～5.5 小時</li>
-                                 <li>山頂遊覽區 – Alpnachstad ：搭乘齒軌列車（約 30～40 分鐘）</li>
-                                 <li>Alpnachstad – 琉森：琉森湖遊船（約 1 小時）</li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div class="day-links-grid mt-3">
-                           <a class="day-link map-link"
-                              href="https://maps.app.goo.gl/PKR6yPs3XJBMnMq78"
-                              rel="noopener noreferrer" target="_blank"
-                              >📍 Google Maps</a>
-                           <a class="day-link ticket-link"
-                              href="https://pilatus.ch/en"
-                              rel="noopener noreferrer" target="_blank"
-                              >🔗 官網</a>
-                           <a class="day-link ticket-link"
-                              href="https://www.leo-travel.idv.tw/59595/swiss-luzern-pilatus-golden-round-trip#%E7%9A%AE%E6%8B%89%E5%9C%96%E6%96%AF%E5%B1%B1%EF%BC%8D-frakmuntegg"
-                              rel="noopener noreferrer" target="_blank"
-                              >🔗 皮拉圖斯山攻略</a>
-                           <a class="day-link guide-jump return-day-link"
-                              href="#day-04"
-                              >📅 回到 Day 04 行程</a>
-                        </div>
-                     </div>
-                  </article>
-                  <article class="guide-card" id="guide-fraekigaudi">
-                     <img alt="Fräkigaudi 夏日雪橇" class="guide-image" decoding="async" loading="lazy" src="images/fraekigaudi.jpg"/>
-                     <div class="guide-card-head">
-                        <div class="text-2xl mb-2">🛷</div>
-                        <div class="flex items-center justify-between gap-3">
-                           <h3 class="font-black text-slate-900">Fräkigaudi 夏日雪橇</h3>
-                           <span class="text-[11px] font-bold text-sky-800">Day 04</span>
-                        </div>
-                        <ul class="mt-3 list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed marker:text-slate-400">
-                           <li>是瑞士最長的夏日雪橇之一，全長約 1350 公尺，是來瑞士絕對不能錯過項目！</li>
-                           <li>由纜車站走到售票處約 8 分鐘，先在自動售票機購票（僅可由信用卡付款）再排隊入場</li>
-                           <li>全程禁止攜帶包包、手持手機或相機等，有免費置物櫃，也可租借綁在胸前的固定器</li>
-                        </ul>
-                     </div>
-                     <div class="p-4">
-                        <div class="guide-meta">
-                           <div class="guide-meta-item"><strong class="block text-slate-800">🕒 2027 時間</strong>4/1～10/18 10:00～16:00</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">🎟️ 票價</strong>9 瑞士法郎/次</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">⏱️ 建議停留</strong>1.5 小時</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">☔ 注意</strong>受天氣影響大，可於官網先確認營運狀況</div>
-                        </div>
-                        <div class="day-links-grid mt-3">
-                           <a class="day-link map-link"
-                              href="https://maps.app.goo.gl/WTQN7XWV3AAkqrk88"
-                              rel="noopener noreferrer" target="_blank"
-                              >📍 Google Maps</a>
-                           <a class="day-link ticket-link"
-                              href="https://www.rodelbahn.ch/en/"
-                              rel="noopener noreferrer" target="_blank"
-                              >🔗 官網</a>
-                           <a class="day-link guide-jump return-day-link"
-                              href="#day-04"
-                              >📅 回到 Day 04 行程</a>
-                        </div>
-                     </div>
-                  </article>
-                  <article class="guide-card" id="guide-first">
-                     <img alt="Grindelwald First 與 Bachalpsee 高山景觀" class="guide-image" decoding="async" loading="lazy" src="images/grindelwald-first.jpg"/>
-                     <div class="guide-card-head">
-                        <div class="text-2xl mb-2">🏎️</div>
-                        <div class="flex items-center justify-between gap-3">
-                           <h3 class="font-black text-slate-900">Grindelwald First</h3>
-                           <span class="text-[11px] font-bold text-emerald-800">Day 06</span>
-                        </div>
-                        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
-                           格林德瓦的活動型高山日：First Cliff Walk、Bachalpsee，以及你們最想玩的 Mountain Cart。
-                        </p>
-                     </div>
-                     <div class="p-4">
-                        <div class="guide-meta">
-                           <div class="guide-meta-item"><strong class="block text-slate-800">🕒 2027 時間</strong>待秋季纜車時刻公布</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">🎟️ 票價</strong>纜車與活動票價待確認</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">⏱️ 建議停留</strong>全天</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">☀️ 建議路線</strong>早班上山，活動優先</div>
-                        </div>
-                        <div class="day-links-grid mt-3">
-                           <a class="day-link map-link"
-                              href="https://www.google.com/maps/search/?api=1&amp;query=Grindelwald+First"
-                              rel="noopener noreferrer" target="_blank"
-                              >📍 Google Maps</a>
-                           <a class="day-link ticket-link"
-                              href="https://www.jungfrau.ch/en-gb/grindelwaldfirst/"
-                              rel="noopener noreferrer" target="_blank"
-                              >🔗 官方網站</a>
-                           <a class="day-link ticket-link"
-                              href="https://www.jungfrau.ch/en-gb/prices-and-tickets/"
-                              rel="noopener noreferrer" target="_blank"
-                              >🎟️ 官方票券</a>
-                           <a class="day-link ticket-link"
-                              href="https://www.jungfrau.ch/en-gb/grindelwaldfirst/first-mountain-cart/"
-                              rel="noopener noreferrer" target="_blank"
-                              >🏎️ Mountain Cart 官方資訊</a>
-                           <a class="day-link guide-jump return-day-link"
-                              href="#day-06"
-                              >📅 回到 Day 06 行程</a>
-                        </div>
-                     </div>
-                  </article>
-                  <article class="guide-card" id="guide-jungfrau">
-                     <img alt="Jungfraujoch 阿萊奇冰河景觀" class="guide-image" decoding="async" loading="lazy" src="images/jungfraujoch.jpg"/>
-                     <div class="guide-card-head">
-                        <div class="text-2xl mb-2">❄️</div>
-                        <div class="flex items-center justify-between gap-3">
-                           <h3 class="font-black text-slate-900">Jungfraujoch</h3>
-                           <span class="text-[11px] font-bold text-emerald-800">Day 07</span>
-                        </div>
-                        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
-                           經 Eigergletscher 前往少女峰區高海拔景點，主要看 Sphinx、Ice Palace 與 Aletsch Glacier；能見度是體驗關鍵。
-                        </p>
-                     </div>
-                     <div class="p-4">
-                        <div class="guide-meta">
-                           <div class="guide-meta-item"><strong class="block text-slate-800">🕒 2027 時間</strong>待官方班次公布</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">🎟️ 票價</strong>高價景點；出發前再確認</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">⏱️ 建議停留</strong>半天～全天</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">☀️ 策略</strong>先看 Livecam 再決定登頂</div>
-                        </div>
-                        <div class="day-links-grid mt-3">
-                           <a class="day-link map-link"
-                              href="https://www.google.com/maps/search/?api=1&amp;query=Jungfraujoch"
-                              rel="noopener noreferrer" target="_blank"
-                              >📍 Google Maps</a>
-                           <a class="day-link ticket-link"
-                              href="https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/"
-                              rel="noopener noreferrer" target="_blank"
-                              >🔗 官方網站</a>
-                           <a class="day-link ticket-link"
-                              href="https://www.jungfrau.ch/en-gb/prices-and-tickets/"
-                              rel="noopener noreferrer" target="_blank"
-                              >🎟️ 官方票券</a>
-                           <a class="day-link guide-jump return-day-link"
-                              href="#day-07"
-                              >📅 回到 Day 07 行程</a>
+                              href="#day-10"
+                              >📅 回到 Day 10 行程</a>
                         </div>
                      </div>
                   </article>
@@ -1762,7 +1925,7 @@
                         <div class="text-2xl mb-2">🚠</div>
                         <div class="flex items-center justify-between gap-3">
                            <h3 class="font-black text-slate-900">瑞士最陡纜車 Gelmerbahn + 蓋默爾湖 Gelmersee</h3>
-                           <span class="text-[11px] font-bold text-emerald-800">Day 08</span>
+                           <span class="text-[11px] font-bold text-emerald-800">Day X</span>
                         </div>
                         <ul class="mt-3 list-disc pl-5 space-y-2 text-xs text-slate-600 leading-relaxed marker:text-slate-400">
                            <li>門票可以在網上購買，也可以在 Innertkirchen 的 Grimseltor Tourist Center，以及 Gelmerbahn 纜車谷站處購買</li>
@@ -1800,90 +1963,16 @@
                               rel="noopener noreferrer" target="_blank"
                               >🔗 官方網站</a>
                            <a class="day-link guide-jump return-day-link"
-                              href="#day-08"
-                              >📅 回到 Day 08 行程</a>
-                        </div>
-                     </div>
-                  </article>
-                  <article class="guide-card" id="guide-gornergrat">
-                     <img alt="Gornergrat Railway 與 Matterhorn" class="guide-image" decoding="async" loading="lazy" src="images/gornergrat-matterhorn.jpg"/>
-                     <div class="guide-card-head">
-                        <div class="text-2xl mb-2">🏔️</div>
-                        <div class="flex items-center justify-between gap-3">
-                           <h3 class="font-black text-slate-900">Gornergrat + Matterhorn</h3>
-                           <span class="text-[11px] font-bold text-emerald-800">Day 09</span>
-                        </div>
-                        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
-                           策馬特最經典的馬特洪峰觀景路線之一。若抵達當天能見度佳，行程已安排把 Gornergrat 放在優先順位。
-                        </p>
-                     </div>
-                     <div class="p-4">
-                        <div class="guide-meta">
-                           <div class="guide-meta-item"><strong class="block text-slate-800">🕒 2027 時間</strong>待官方列車時刻公布</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">🎟️ 票價</strong>待 2027 官方票價公布</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">⏱️ 建議停留</strong>3–5 小時</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">☀️ 策略</strong>能見度佳就優先上山</div>
-                        </div>
-                        <div class="day-links-grid mt-3">
-                           <a class="day-link map-link"
-                              href="https://www.google.com/maps/search/?api=1&amp;query=Gornergrat"
-                              rel="noopener noreferrer" target="_blank"
-                              >📍 Google Maps</a>
-                           <a class="day-link ticket-link"
-                              href="https://www.gornergrat.ch/en/"
-                              rel="noopener noreferrer" target="_blank"
-                              >🔗 官方網站</a>
-                           <a class="day-link ticket-link"
-                              href="https://www.gornergrat.ch/en/products/ticket"
-                              rel="noopener noreferrer" target="_blank"
-                              >🎟️ 官方票券</a>
-                           <a class="day-link guide-jump return-day-link"
-                              href="#day-09"
-                              >📅 回到 Day 09 行程</a>
-                        </div>
-                     </div>
-                  </article>
-                  <article class="guide-card" id="guide-glacier">
-                     <img alt="Glacier Express 行經 Landwasser Viaduct" class="guide-image" decoding="async" loading="lazy" src="images/glacier-express.jpg"/>
-                     <div class="guide-card-head">
-                        <div class="text-2xl mb-2">🚂</div>
-                        <div class="flex items-center justify-between gap-3">
-                           <h3 class="font-black text-slate-900">Glacier Express</h3>
-                           <span class="text-[11px] font-bold text-emerald-800">Day 10</span>
-                        </div>
-                        <p class="mt-2 text-xs text-slate-600 leading-relaxed">
-                           由策馬特前往聖莫里茲的長程景觀列車，是本趟最需要提前確認營運日期與座位預約的交通體驗。
-                        </p>
-                     </div>
-                     <div class="p-4">
-                        <div class="guide-meta">
-                           <div class="guide-meta-item"><strong class="block text-slate-800">🕒 2027 時刻</strong>待官方時刻表公布</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">🎟️ 預約</strong>車票與座位 reservation 分開確認</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">⏱️ 行程</strong>幾乎全天列車體驗</div>
-                           <div class="guide-meta-item"><strong class="block text-slate-800">📅 目前規劃</strong>2027/10/02</div>
-                        </div>
-                        <div class="day-links-grid mt-3">
-                           <a class="day-link map-link"
-                              href="https://www.google.com/maps/search/?api=1&amp;query=Glacier+Express+Zermatt"
-                              rel="noopener noreferrer" target="_blank"
-                              >📍 Google Maps</a>
-                           <a class="day-link ticket-link"
-                              href="https://www.glacierexpress.ch/en/"
-                              rel="noopener noreferrer" target="_blank"
-                              >🔗 官方網站</a>
-                           <a class="day-link ticket-link"
-                              href="https://www.glacierexpress.ch/en/book-now"
-                              rel="noopener noreferrer" target="_blank"
-                              >🎟️ 官方訂票</a>
-                           <a class="day-link guide-jump return-day-link"
-                              href="#day-10"
-                              >📅 回到 Day 10 行程</a>
+                              href="#day-11"
+                              >📅 回到 Day X 行程</a>
                         </div>
                      </div>
                   </article>
                </div>
             </div>
          </details>
+
+         <!-- Food Guide -->
          <details class="major-section scroll-mt-24" id="food-guide">
             <summary class="major-summary">
                <span class="major-summary-title"><span>🍴️</span>必吃美食</span>
@@ -1954,6 +2043,8 @@
                </div>
             </div>
          </details>
+
+         <!-- Packing Section -->
          <details class="major-section scroll-mt-24" id="packing-section">
             <summary class="major-summary">
                <span class="major-summary-title"><span>🧳</span>行李準備</span>
@@ -2034,13 +2125,17 @@
                </div>
             </div>
          </details>
+
       </main>
+
       <!-- Footer -->
       <footer class="mt-12 bg-slate-900 text-slate-400 text-xs py-8 border-t border-slate-800">
          <div class="max-w-5xl mx-auto px-4 text-right">
             <span class="font-bold text-slate-200">Swiss &amp; Munich Oktoberfest 2027</span>
          </div>
       </footer>
+
+      <!-- Script -->
       <script>
          function updateToggleAllButton() {
             const days = [...document.querySelectorAll(".day-details")];
@@ -2157,5 +2252,6 @@
             });
          });
       </script>
+
    </body>
 </html>
